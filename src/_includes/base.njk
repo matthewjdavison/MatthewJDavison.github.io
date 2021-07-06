@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>{{title}}</title>
+</head>
+<body>    
+{% include "header.njk" %}
+    {{ content | safe }}
+{% include "footer.njk" %}
+</body>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/css-fixes.js"></script> <!-- This will be used for css bugs -->
+
+<svg height="0px" aria-label="Hamburger icon">        
+        <symbol class="hamburger__svg" id="hamburger" aria-label="Hamburger icon" viewBox="0 0 30 30"> <!--25-->
+            <rect width="30" height="30" fill="transparent"/>
+
+            <line class="burger" x1="3" y1="9" x2="27" y2="9"/>
+            <line class="burger" x1="3" y1="15" x2="27" y2="15"/>
+            <line class="burger" x1="3" y1="21" x2="23" y2="21"/>        
+        </symbol>    
+
+        <symbol id="close" class="close__svg" viewBox="0 0 30 30">
+            <rect width="30" height="30" fill="transparent"/>
+            <line class="burger" x1="3" y1="3" x2="27" y2="27"/>
+            <line class="burger" x1="3" y1="27" x2="27" y2="3"/>
+        </symbol>
+</svg>
+</html>

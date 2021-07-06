@@ -1,0 +1,117 @@
+Open SVG
+Paste markup
+Demo
+Contribute
+
+    About
+
+Powered by the incredible SVGO
+4.52k → 2.27k 50.27%
+
+<svg width="210mm" height="297mm" viewBox="0 0 210 297" class="svg8">
+  <g class="burger">
+    <rect class="burger__meat" width="103.849" height="9.071" x="53.076" y="96.195" ry="2.646" fill="#291100"/>
+  </g>
+  <g class="cheese">
+    <path class="cheese__drips" d="M55.721 96.195c-1.258 0-2.302.87-2.573 2.043a1.406 1.406 0 00-.184.691v1.807c0 .756.58 1.365 1.3 1.365.72 0 1.298-.609 1.298-1.365v-.95h.643a1.417 1.417 0 00-.075.438v1.808c0 .756.58 1.364 1.3 1.364.72 0 1.299-.608 1.299-1.364v-1.808c0-.154-.03-.3-.075-.438h.398v1.262c0 .756.579 1.364 1.299 1.364s1.3-.608 1.3-1.364v-1.262h.502v.714c0 .756.58 1.365 1.3 1.365.72 0 1.3-.609 1.3-1.365v-.714h4.204v1.045c0 .756.58 1.364 1.3 1.364.719 0 1.299-.608 1.299-1.364v-1.045h.946v.2c0 .756.579 1.364 1.299 1.364s1.3-.608 1.3-1.363v-.201h1.017v.24c0 .755.58 1.364 1.299 1.364.72 0 1.3-.609 1.3-1.365v-.24h1.74v.078c0 .756.58 1.364 1.3 1.364.72 0 1.298-.608 1.298-1.364v-.077h2.815c.002.754.58 1.361 1.3 1.361.718 0 1.297-.607 1.299-1.361h1.076v1.127c0 .755.58 1.364 1.3 1.364.719 0 1.298-.609 1.298-1.364v-1.127h1.362c-.018.09-.027.182-.027.277v1.808c0 .756.58 1.364 1.3 1.364.72 0 1.299-.608 1.299-1.364v-1.808c0-.095-.01-.188-.027-.277h2.742v1.187c0 .756.58 1.364 1.3 1.364.72 0 1.3-.608 1.3-1.364v-1.187h4.7v.355c0 .756.58 1.364 1.3 1.364.72 0 1.3-.608 1.3-1.364v-.355h2.036a1.42 1.42 0 00-.05.357v1.808c0 .756.58 1.364 1.3 1.364.719 0 1.298-.608 1.298-1.364v-1.808a1.42 1.42 0 00-.05-.357h1.325v1.612c0 .756.579 1.364 1.299 1.364s1.299-.608 1.299-1.364v-1.612h.949c-.001.027-.004.055-.004.083v2.114c0 .884.58 1.595 1.3 1.595.719 0 1.298-.711 1.298-1.595v-2.114c0-.028-.002-.056-.003-.083h.476v1.281c0 .756.58 1.364 1.3 1.364.72 0 1.299-.608 1.299-1.364v-1.281h4.299v.667c0 .756.58 1.365 1.3 1.365.719 0 1.299-.609 1.299-1.365v-.667h.378v1.565c0 .756.579 1.364 1.299 1.364s1.3-.608 1.3-1.364v-1.565h.566v.478c0 .756.58 1.364 1.3 1.364.72 0 1.299-.608 1.299-1.364v-.478h1.512v1.329c0 .755.579 1.364 1.299 1.364s1.3-.609 1.3-1.364v-1.33h1.605v.62c0 .756.58 1.365 1.3 1.365.72 0 1.3-.609 1.3-1.364v-.62h1.89v.714c0 .756.578 1.365 1.298 1.365.72 0 1.3-.609 1.3-1.365v-.714h1.134v1.66c0 .755.579 1.364 1.299 1.364s1.299-.609 1.299-1.365v-1.66h.945v.48c0 .755.58 1.363 1.3 1.363.72 0 1.299-.608 1.299-1.364v-1.807c0-.278-.08-.534-.214-.75a2.639 2.639 0 00-2.392-1.512z" fill="#ff7f2a"/>
+  </g>
+  <g class="ketchup">
+    <rect class="ketchup-drip" width="1.512" height="3.024" x="54.192" y="96.861" ry=".756" fill="red"/>
+    <rect class="rect1212-3-0-5-4-9-1-9-4-0-4-8-4-8-3-2-0-8-3-8-0-3-6-2-5-2-6" width="1.512" height="3.024" x="97.027" y="-95.869" ry=".756" transform="rotate(89.337)" fill="red"/>
+    <rect class="ketchup-drip-5" width="1.512" height="3.024" x="56.44" y="98.113" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-6" width="1.512" height="3.024" x="64.833" y="98.364" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-0" width="1.512" height="3.024" x="77.354" y="96.242" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-8" width="1.512" height="3.024" x="89.648" y="97.311" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-82" width="1.512" height="3.024" x="99.737" y="97.979" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-1" width="1.512" height="3.024" x="114.304" y="96.91" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-19" width="1.512" height="3.024" x="122.723" y="97.445" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-01" width="1.512" height="3.024" x="106.62" y="98.113" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-58" width="1.512" height="3.024" x="94.726" y="96.977" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-7" width="1.512" height="3.024" x="131.877" y="97.779" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-3" width="1.512" height="3.024" x="142.166" y="96.843" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-9" width="1.512" height="3.024" x="150.652" y="96.376" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-68" width="1.512" height="3.024" x="154.594" y="95.641" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-2" width="1.512" height="3.024" x="144.438" y="95.774" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-69" width="1.512" height="3.024" x="137.623" y="96.576" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-4" width="1.512" height="3.024" x="127.801" y="98.046" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-76" width="1.512" height="3.024" x="119.449" y="98.046" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-44" width="1.512" height="3.024" x="116.776" y="96.91" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-29" width="1.512" height="3.024" x="110.896" y="97.177" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-72" width="1.512" height="3.024" x="103.078" y="97.044" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-46" width="1.512" height="3.024" x="83.835" y="96.108" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-87" width="1.512" height="3.024" x="79.893" y="97.111" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-51" width="1.512" height="3.024" x="71.741" y="97.712" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-49" width="1.512" height="3.024" x="67.264" y="98.246" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-492" width="1.512" height="3.024" x="59.513" y="98.046" ry=".756" fill="red"/>
+    <rect class="ketchup-drip-87-3" width="1.512" height="3.024" x="-100.032" y="84.83" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-9" width="1.512" height="3.024" x="-99.888" y="72.202" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-0" width="1.512" height="3.024" x="-100.486" y="60.089" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-2" width="1.512" height="3.024" x="-100.82" y="95.446" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-1" width="1.512" height="3.024" x="-101.139" y="123.507" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-8" width="1.512" height="3.024" x="-101.446" y="132.859" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-15" width="1.512" height="3.024" x="-99.969" y="138.154" ry=".756" transform="rotate(-90.65)" fill="red"/>
+    <rect class="ketchup-drip-87-3-6" width="1.512" height="3.024" x="-100.387" y="145.567" ry=".756" transform="rotate(-90.65)" fill="red"/>
+  </g>
+  <g class="lettuce">
+    <path class="lettuce__pieces" d="M137.19 94.409c-.716 0-1.32.451-1.552 1.086h-4.112a1.65 1.65 0 00-1.517-.992H111.3c-.716 0-1.321.452-1.552 1.086H93.904a1.65 1.65 0 00-1.527-1.015h-18.71c-.716 0-1.322.452-1.552 1.087H54.532a1.65 1.65 0 00-1.653 1.653 1.65 1.65 0 001.653 1.654h18.71a1.65 1.65 0 001.553-1.087h15.843a1.65 1.65 0 001.527 1.016h18.71c.715 0 1.321-.452 1.552-1.087h4.113a1.65 1.65 0 001.516.993h18.71c.716 0 1.321-.453 1.552-1.087H155.9a1.65 1.65 0 001.653-1.654 1.65 1.65 0 00-1.653-1.653z" fill="green"/>
+  </g>
+  <g class="bun">
+    <path class="bun-top" d="M104.917 77.384A49.653 19.756 0 0055.4 96.217H154.6a49.653 19.756 0 00-49.6-18.833 49.653 19.756 0 00-.082 0z" fill="#ffd284"/>
+    <path class="bun-bottom" d="M55.347 105.082h99.306v3.792a4.158 4.158 135 01-4.157 4.158H59.41a4.063 4.063 45 01-4.063-4.063z" fill="#ffd284"/>
+  </g>
+  <g class="seeds">
+    <ellipse class="sesame__seed" cx="59.72" cy="92.771" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-8" cx="63.543" cy="93.01" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-0" cx="78.243" cy="87.264" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-4" cx="99.09" cy="89.134" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-6" cx="80.983" cy="92.342" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-1" cx="71.962" cy="91.206" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-7" cx="87.798" cy="83.789" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-01" cx="108.244" cy="83.722" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-79" cx="90.137" cy="92.876" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-5" cx="88.266" cy="88.399" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-14" cx="115.995" cy="92.743" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-68" cx="107.242" cy="91.206" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-81" cx="127.621" cy="88.466" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-57" cx="124.347" cy="93.01" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-9" cx="118.267" cy="87.33" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-08" cx="124.815" cy="83.254" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-04" cx="135.439" cy="88.667" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-2" cx="145.662" cy="93.745" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-05" cx="135.773" cy="93.945" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-52" cx="98.823" cy="83.388" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-72" cx="92.943" cy="87.197" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-42" cx="105.705" cy="86.863" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-00" cx="72.898" cy="87.731" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-019" cx="65.214" cy="90.07" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-17" cx="68.555" cy="93.21" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-3" cx="75.637" cy="90.938" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-97" cx="88.333" cy="93.745" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-39" cx="97.754" cy="92.475" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-60" cx="106.373" cy="93.812" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-75" cx="114.191" cy="87.865" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-970" cx="115.193" cy="81.116" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-20" cx="101.963" cy="79.914" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-95" cx="87.664" cy="83.054" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-34" cx="79.312" cy="83.856" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-71" cx="84.39" cy="88.199" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-88" cx="142.588" cy="91.005" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-32" cx="138.379" cy="85.66" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-13" cx="130.361" cy="93.01" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-63" cx="145.127" cy="88.333" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-15" cx="133.1" cy="84.992" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-36" cx="122.543" cy="82.052" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-29" cx="123.011" cy="86.529" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-526" cx="102.966" cy="82.72" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-726" cx="89.201" cy="81.985" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-18" cx="93.878" cy="82.052" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-02" cx="83.522" cy="81.985" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-64" cx="69.423" cy="86.462" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-73" cx="79.045" cy="92.876" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-65" cx="75.57" cy="94.48" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-206" cx="100.427" cy="94.48" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-99" cx="100.493" cy="87.664" rx=".835" ry=".73" fill="#ececec"/>
+    <ellipse class="sesame__seed-973" cx="150.94" cy="93.344" rx=".835" ry=".73" fill="#ececec"/>
+  </g>
+</svg>
+
