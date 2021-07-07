@@ -44,7 +44,7 @@ layout: 'base.njk'
                 <figcaption class="project__caption">
                     <h3 class="project__title">{{ post.data.title }}</h3>
                     <p class="project__description"> {{ post.data.description }} </p>
-                    <button type="button" href="#" class="project__link">Read More</button>
+                    <a href="#" class="project__link">Read More</a>
                 </figcaption>
                 
                 <aside class="portfolio-modal">
@@ -71,7 +71,7 @@ layout: 'base.njk'
                 <figcaption class="project__caption">
                     <h3 class="project__title">{{ post.data.title }}</h3>
                     <p class="project__description"> {{ post.data.description }} </p>
-                    <button type="button" href="#" class="project__link">Read More</button>
+                    <a href="#" class="project__link">Read More</a>
                 </figcaption>
                 
                 <aside class="portfolio-modal">
@@ -131,7 +131,7 @@ layout: 'base.njk'
 
 
         > $matthew.Resumes <br>
-        <button href="#" class="modal__link" id="resumesLink">Click here</button> to view all my role-specific resumes! <br> <br>
+        <a href="#" class="modal__link" id="resumesLink">Click here</a> to view all my role-specific resumes! <br> <br>
 
         > $matthew.Disclaimer <br>
         For privacy reasons, I haven't included details such as home address or mobile number on the CV or resumes.
@@ -149,26 +149,34 @@ layout: 'base.njk'
 
         <ul class="resume-items">
 
+        {% for resume in collections.resume %}
             <figure class="resume__card" >
-                <button class="resume__card--link" href="https://www.dropbox.com/sh/79cw4c1nppqbtif/AABMJ1dcc2cjv1iZY4HO8EXSa?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
+                <a class="resume__card--link" href="{{resume.data.url}}" target='_blank' download="Matthew Davison - {{resume.data.role}} Resume" aria-label="Click here to download my {{resume.data.role}} Resume!">
+                    <p class="resume__role">{{resume.data.role}}</p>
+                </a>
+            </figure>
+        {% endfor %}
+
+            {# <figure class="resume__card" >
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/79cw4c1nppqbtif/AABMJ1dcc2cjv1iZY4HO8EXSa?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
                     <p class="resume__role">Web Designer</p>
-                </button>
+                </a>
             </figure>
             <figure class="resume__card" >
-                <button class="resume__card--link" href="https://www.dropbox.com/sh/lj36cv16c1wvu0x/AAAzdcf2PIqVIPbXMvIcdZbra?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/lj36cv16c1wvu0x/AAAzdcf2PIqVIPbXMvIcdZbra?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
                     <p class="resume__role">Android Developer</p>
-                </button>
+                </a>
             </figure>
             <figure class="resume__card" >
-                <button class="resume__card--link" href="https://www.dropbox.com/sh/4bubmdbnomc49ob/AAAwaxjA7beu9z0U87NRCSIUa?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/4bubmdbnomc49ob/AAAwaxjA7beu9z0U87NRCSIUa?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
                     <p class="resume__role">Shop Assistant</p>
-                </button>
+                </a>
             </figure>
             <figure class="resume__card" >
-                <button class="resume__card--link" href="https://www.dropbox.com/sh/mbhgj9aomqo0sph/AAAGOcrrXS0eCxt3eb-0zDkwa?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/mbhgj9aomqo0sph/AAAGOcrrXS0eCxt3eb-0zDkwa?dl=0" target='_blank' download="Matthew Davison Web Designer Resume" aria-label="Click here to download my Web Designer Resume!">
                     <p class="resume__role">IT Support Associate</p>
-                </button>
-            </figure>
+                </a>
+            </figure> #}
         </ul>
     </aside>
 </section>
