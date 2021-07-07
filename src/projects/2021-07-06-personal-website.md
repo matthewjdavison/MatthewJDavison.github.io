@@ -12,10 +12,6 @@ classes:
   - project
   - project--dark
 ---
-<style>
-
-</style>
-
 <p>
 I started this project back at the start of June. I decided to create it after seeing countless recruiters state "We can get a much clearer image of who we are hiring when they have a personal website!". One of my biggest concerns while job searching was always "Are they getting a good image of me via my Resume alone?" so I instantly fell in love with that idea. The first question I had was: "Well, okay... how should I do this?" Prior to this, I only had made one web project- my issue tracker. I had no experience designing websites- nor did I even know of any designing tools.
 
