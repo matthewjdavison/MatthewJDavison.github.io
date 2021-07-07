@@ -14,21 +14,20 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}      
-      - {
-         label: "Tags" 
-         name: "tags" 
-         widget: "select" 
-         multiple: true 
-         min: 1
-         options: 
+      - label: "Title" name: "title" widget: "string"
+      - label: "Description" name: "description" widget: "markdown"
+      - label: "Author" name: "author" widget: "string"
+      - label: "Date" name: "date" widget: "datetime"    
+      - label: "Tags" 
+        name: "tags" 
+        widget: "select" 
+        multiple: true 
+        min: 1
+        options: 
            - { label: "Post", value: "post"} 
            - { label: "Featured", value: "featured"} 
            - { label: "Private", value: "hidden"}
-         default: ["post"]}
-      - {label: "Featured Image", name: "imageFeatured", widget: "image"}
-      - {label: "Featured Image Alt", name: "imageFeaturedAlt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+        default: ["post"]}
+      - label: "Featured Image" name: "imageFeatured" widget: "image"
+      - label: "Featured Image Alt" name: "imageFeaturedAlt" widget: "string"
+      - label: "Body" name: "body" widget: "markdown"
