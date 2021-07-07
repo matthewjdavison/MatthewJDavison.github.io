@@ -13,8 +13,8 @@ collections:
     folder: "src/projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    media_folder: "{{media_folder}}/projects"
-    public_folder: "{{public_folder}}/projects"
+    media_folder: "public/assets/projects"
+    public_folder: "/assets/projects"
     fields:
       - label: "Title"
         name: "title"
