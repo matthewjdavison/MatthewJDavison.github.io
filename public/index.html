@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Matthew Davison</title>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>    
+<button href="#" class="navigation-button" aria-label="Click to open navigation">
+    <svg class="hamburger">
+        <use class="nav-toggle--burger"  href="#hamburger"/>
+        <use class="nav-toggle--close"  href="#close"/>
+    </svg>
+</button>
+
+<nav class="page-links">
+        <a id="nav__home" href="#home">Home</a>
+        <a href="#portfolio">My Portfolio</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact Me</a> 
+</nav>
+    
+
+
+<section class="welcome" aria-label="Introduction" >        
+
+    <span class="profile-icon"></span>
+    <h3 class="greet">Hi! My name is </h3>
+    <h2 class="name">Matthew Davison</h2>
+    <p class="role">I'm a Developer. I develop websites, android apps and classical games!</p>     
+    
+    <a href="#home" class="down-pointer">
+        <svg width="18.5" height="30.5" viewBox="0 0 18.5 30.5">                
+            <g transform="matrix(3.8 0 0 3.8 3.4e-7 0)">
+                <ellipse class="class1" cx="2.4" cy="4" rx="2.2" ry="3.8" />
+                <g>
+                    <rect x="2.2" y="1.5" width=".26" height="4" />
+                    <path transform="matrix(1.9 0 0 .99 -.094 1.6)" d="m1.3 5-.78-1.3 1.5-.02z"
+                        style="stroke-width:0" />
+                </g>
+            </g>
+        </svg>
+    </>
+</section>
+<section class="cta" aria-label="Call To Action" id="home"  >
+    <h1 class="cta__heading">Struggle, Persevere, Conquer.</h1>
+    <p class="quote">
+        Regardless of the task or the challenges that come with it, if you struggle and persevere, you’ll eventually conquer any goal.
+    </p>
+    <p class="ending-statement">This is who I am.</p>
+    <button href="#portfolio" class="cta__button">See My Work</button>
+</section>   
+<section class="portfolio" aria-label="Portfolio" id="portfolio" >
+    <h1>My Portfolio</h1>
+    
+    <ul class="projects" aria-label="Projects">    
+        
+            <figure class="project project--dark ">           
+                <img src="/projects/media/personal-website-primary-image.png" alt="a pair of glasses on a closed laptop" class="project__image">
+                <span class="fa-solid fa-hand-pointer"></span>
+                <figcaption class="project__caption">
+                    <h3 class="project__title">Personal Website</h3>
+                    <p class="project__description"> This project was creating the website you&#39;re currently browsing! I&#39;ll be giving you some insight into how I made this site from ground-up. </p>
+                    <a href="#" class="project__link">Read More</a>
+                </figcaption>
+                
+                <aside class="portfolio-modal">
+                    <svg class="close-modal">
+                        <circle cx="15" cy="15" r="14" />
+                        <line x1="7" y1="7" x2="23" y2="23" />
+                        <line x1="23" y1="7" x2="7" y2="23" />
+                    </svg>
+                    <h1 class="project__title">Personal Website</h1>
+                    <header class="project__header">
+                        <img src="/projects/media/personal-website-primary-image.png" alt="a pair of glasses on a closed laptop">
+                        <p class="project__summary">This project was creating the website you&#39;re currently browsing! I&#39;ll be giving you some insight into how I made this site from ground-up.</p>
+                    </header>
+                    <section class="project_content">                        
+                        <p>I started this project back at the start of June. I decided to create it after seeing countless recruiters state "We can get a much clearer image of who we are hiring when they have a personal website!". One of my biggest concerns while job searching was always "Are they getting a good image of me via my Resume alone?" so I instantly fell in love with that idea. The first question I had was: "Well, okay... how should I do this?" Prior to this, I only had made one web project- my issue tracker. I had no experience designing websites- nor did I even know of any designing tools.<aside><img class="portfolio-pull-right" src="/projects/media/figma_design.png" alt="Figma Design"></aside>The answer was: Figma and Pinterest. <br><br> I started looking up portfolio website designs on Pinterest and noted down some ideas based on them. Afterwards, I pulled up Figma and started making some basic elements. The design didn't too long to create with the powerful tools Figma offered. <br> After I completed the design, it was time to pull up my code editor, VSCode. I also opened up YouTube to put on some music when I saw something that caught my eye. "Sass Tutorial for Beginners - CSS with Superpowers". Since I knew I'd be heavily relying on CSS, I opened it to see what it was about... Thank god I did. While I've not used the nesting since I want to get used to how CSS works as it is, I have used mixins for a few things in the project, but the greatest asset was partials.<br> Once I completed that video and armed with my new found knowledge, I created the index.html page and wrote up some markup, each section of my design getting a section element. The markup isn't all that complicated, so it doesn't need much explaining...<br><br> The most important part starts now: CSS, or rather SCSS. I created a 'src/scss' folder and then created a folder for each section ('src/scss/portfolio/') and then made seperate partials for each component in the section, which were then linked into a partial with the same name as the section ('src/scss/portfolio/_portfolio.scss'). You might ask "Isn't that a bit overkill?" and it might be... but it certainly made it very easy to read my CSS and keep track of where to make changes when I had to.<aside><img class="portfolio-pull-left" src="/projects/media/partials.png" alt="Screenshot of partials" /></aside>Once all the partials were created and linked into a 'main.scss' in the root of the scss folder, the design was done. At that point, I started writing... well, this. I started filling out the details of the projects. After I finish doing that, I'll likely make a backup, as I recently saw another video about 'templating languages'. That will be incredibly helpful for adding new projects to this website in the future, as current I have to manually add them...<p>
+                    </section>
+                </aside>
+            </figure>
+        
+        
+            <figure class="project project--dark ">           
+                <img src="https://picsum.photos/id/1061/960" alt="960 by 960 picsum image" class="project__image">
+                <span class="fa-solid fa-hand-pointer"></span>
+                <figcaption class="project__caption">
+                    <h3 class="project__title">Placeholder Project</h3>
+                    <p class="project__description"> This is a placeholder project. </p>
+                    <a href="#" class="project__link">Read More</a>
+                </figcaption>
+                
+                <aside class="portfolio-modal">
+                    <svg class="close-modal">
+                        <circle cx="15" cy="15" r="14" />
+                        <line x1="7" y1="7" x2="23" y2="23" />
+                        <line x1="23" y1="7" x2="7" y2="23" />
+                    </svg>
+                    <h1 class="project__title">Placeholder Project</h1>
+                    <header class="project__header">
+                        <img src="https://picsum.photos/id/1061/960" alt="960 by 960 picsum image">
+                        <p class="project__summary">This is a placeholder project.</p>
+                    </header>
+                    <section class="project_content">                        
+                        <p>This is a placeholder project.</p>
+
+                    </section>
+                </aside>
+            </figure>
+        
+            <figure class="project project--light ">           
+                <img src="https://picsum.photos/id/104/960" alt="960 by 960 picsum image" class="project__image">
+                <span class="fa-solid fa-hand-pointer"></span>
+                <figcaption class="project__caption">
+                    <h3 class="project__title">Placeholder Project</h3>
+                    <p class="project__description"> This is a placeholder project. </p>
+                    <a href="#" class="project__link">Read More</a>
+                </figcaption>
+                
+                <aside class="portfolio-modal">
+                    <svg class="close-modal">
+                        <circle cx="15" cy="15" r="14" />
+                        <line x1="7" y1="7" x2="23" y2="23" />
+                        <line x1="23" y1="7" x2="7" y2="23" />
+                    </svg>
+                    <h1 class="project__title">Placeholder Project</h1>
+                    <header class="project__header">
+                        <img src="https://picsum.photos/id/104/960" alt="960 by 960 picsum image">
+                        <p class="project__summary">This is a placeholder project.</p>
+                    </header>
+                    <section class="project_content">                        
+                        <p>This is a placeholder project.</p>
+
+                    </section>
+                </aside>
+            </figure>
+        
+            <figure class="project project--dark ">           
+                <img src="https://picsum.photos/id/1019/960" alt="960 by 960 picsum image" class="project__image">
+                <span class="fa-solid fa-hand-pointer"></span>
+                <figcaption class="project__caption">
+                    <h3 class="project__title">Placeholder Project</h3>
+                    <p class="project__description"> This is a placeholder project. </p>
+                    <a href="#" class="project__link">Read More</a>
+                </figcaption>
+                
+                <aside class="portfolio-modal">
+                    <svg class="close-modal">
+                        <circle cx="15" cy="15" r="14" />
+                        <line x1="7" y1="7" x2="23" y2="23" />
+                        <line x1="23" y1="7" x2="7" y2="23" />
+                    </svg>
+                    <h1 class="project__title">Placeholder Project</h1>
+                    <header class="project__header">
+                        <img src="https://picsum.photos/id/1019/960" alt="960 by 960 picsum image">
+                        <p class="project__summary">This is a placeholder project.</p>
+                    </header>
+                    <section class="project_content">                        
+                        <p>This is a placeholder project.</p>
+
+                    </section>
+                </aside>
+            </figure>
+        
+            <figure class="project project--dark ">           
+                <img src="https://picsum.photos/id/509/960/" alt="960 by 960 picsum image" class="project__image">
+                <span class="fa-solid fa-hand-pointer"></span>
+                <figcaption class="project__caption">
+                    <h3 class="project__title">Placeholder Project</h3>
+                    <p class="project__description"> This is a placeholder project. </p>
+                    <a href="#" class="project__link">Read More</a>
+                </figcaption>
+                
+                <aside class="portfolio-modal">
+                    <svg class="close-modal">
+                        <circle cx="15" cy="15" r="14" />
+                        <line x1="7" y1="7" x2="23" y2="23" />
+                        <line x1="23" y1="7" x2="7" y2="23" />
+                    </svg>
+                    <h1 class="project__title">Placeholder Project</h1>
+                    <header class="project__header">
+                        <img src="https://picsum.photos/id/509/960/" alt="960 by 960 picsum image">
+                        <p class="project__summary">This is a placeholder project.</p>
+                    </header>
+                    <section class="project_content">                        
+                        <p>This is a placeholder project.</p>
+
+                    </section>
+                </aside>
+            </figure>
+        
+    </ul>
+
+    
+</section>
+
+<section class="about" aria-label="About Me" id="about"  >
+    <h1>About Me</h1>
+    
+    <samp>
+        > $matthew.Name <br>
+        Matthew Davison <br><br>
+
+        > $matthew.Age <br>
+        22 <br><br>
+
+        > $matthew.Origin <br>
+        Plymouth, Devon, UK <br><br>
+
+        > $matthew.Interests <br>
+        Listening to Music <br>
+        Watching Live Streamers <br>
+        Reading books and light novels <br>
+        Programming various projects <br>
+        Trying my hand at web design <br>
+        Sound design... just how do sounds make you feel emotions?! <br><br>
+
+        > $matthew.Bio <br>
+        Hello! I’m Matthew. I’m a designer and a programmer. I first discovered the marvels of the computing world
+        back in Primary School and since then, I’ve played around with creating various apps, websites, games and
+        software. <br><br>
+
+        > $matthew.Hire <br>
+        Fancy hiring me? Check out my resumes and CV! Note, both links lead to dropbox in a new tab!<br><br>
+
+        > $matthew.CV <br>
+        <a href="https://www.dropbox.com/sh/gbrg56rmi7nicmz/AAD-2XdgQlAmdo187PuQ_rhAa?dl=0" target='_blank' download="Matthew Davison CV" aria-label="Click here to download my CV!"> Click
+            here</a> to download my CV! Note: This is a full CV, not a Resume! <br><br>The CV doesn't have many job-specific keywords. Use the Resume for that!<br><br>
+
+
+        > $matthew.Resumes <br>
+        <a href="#" class="modal__link" id="resumesLink">Click here</a> to view all my role-specific resumes! <br> <br>
+
+        > $matthew.Disclaimer <br>
+        For privacy reasons, I haven't included details such as home address or mobile number on the CV or resumes.
+        Please email me if interested and I can share my mobile number then. Thank you!
+    </samp>
+
+    <aside class="portfolio-modal">
+        <svg class="close-modal">
+            <circle cx="15" cy="15" r="14" />
+            <line x1="7" y1="7" x2="23" y2="23" />
+            <line x1="23" y1="7" x2="7" y2="23" />
+        </svg>
+
+        <h1 class="project__title">Resumes</h1>          
+
+        <ul class="resume-items">
+
+        
+            <figure class="resume__card" >
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/mbhgj9aomqo0sph/AAAGOcrrXS0eCxt3eb-0zDkwa?dl=0" target='_blank' download="Matthew Davison - Android Developer Resume" aria-label="Click here to download my Android Developer Resume!">
+                    <p class="resume__role">Android Developer</p>
+                </a>
+            </figure>
+        
+            <figure class="resume__card" >
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/mbhgj9aomqo0sph/AAAGOcrrXS0eCxt3eb-0zDkwa?dl=0" target='_blank' download="Matthew Davison - IT Support Associate Resume" aria-label="Click here to download my IT Support Associate Resume!">
+                    <p class="resume__role">IT Support Associate</p>
+                </a>
+            </figure>
+        
+            <figure class="resume__card" >
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/4bubmdbnomc49ob/AAAwaxjA7beu9z0U87NRCSIUa?dl=0" target='_blank' download="Matthew Davison - Shop Assistant Resume" aria-label="Click here to download my Shop Assistant Resume!">
+                    <p class="resume__role">Shop Assistant</p>
+                </a>
+            </figure>
+        
+            <figure class="resume__card" >
+                <a class="resume__card--link" href="https://www.dropbox.com/sh/79cw4c1nppqbtif/AABMJ1dcc2cjv1iZY4HO8EXSa?dl=0" target='_blank' download="Matthew Davison - Web Developer Resume" aria-label="Click here to download my Web Developer Resume!">
+                    <p class="resume__role">Web Developer</p>
+                </a>
+            </figure>
+        
+
+            
+        </ul>
+    </aside>
+</section>
+
+<section class="contact" aria-label="Contact Me" id="contact"  >
+    <h1>Contact Me</h1>
+    <form class="contact-form" aria-label="Contact Form" netlify
+        autocomplete="off">
+        <label class="form-name" for="name">Name:
+            <input type="text" aria-label="name" name="name" id="name" required pattern="^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"></label> 
+            <!-- I can't simply use [A-Za-z\s] since there might be someone called 'Jo'n Smith or John M. Smith, things like that. -->
+        <label class="form-email" for="email">Email
+            <input type="email" aria-label="email" name="email" id="email" required>
+        </label>
+        <label class="form-subject" for="subject">Subject
+            <input type="text" aria-label="subject" name="subject" id="subject" required>
+        </label>
+        <label class="form-message" for="message">Message
+            <textarea aria-label="message" name="message" id="message" required></textarea>
+        </label>
+        <button class="form-submit" type="submit">Send</button>
+    </form>
+</section>
+
+
+<section class="footer" aria-label="Footer"  >
+    <p>Follow me on Social Media</p>
+    <address class="social-icons">
+        <button href="https://github.com/matthewjdavison" target='_blank' aria-label="Github Profile">
+            <span class="fab fa-github"></span>
+        </button>
+        <button href="#" target='_blank' aria-label="Twitter Profile">
+            <span class="fab fa-twitter" ></span>
+        </button>
+        <button href="https://dribbble.com/MatthewJDavison" target='_blank' aria-label="Dribbble Profile">
+            <span class="fab fa-dribbble"></span>
+        </button>
+    </address>
+    <span class="copyright">&copy;Copyright 2021 Matthew Davison</span>
+</section>
+
+
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/css-fixes.js"></script> <!-- This will be used for css bugs -->
+
+<svg height="0px" aria-label="Hamburger icon">        
+        <symbol class="hamburger__svg" id="hamburger" aria-label="Hamburger icon" viewBox="0 0 30 30"> <!--25-->
+            <rect width="30" height="30" fill="transparent"/>
+
+            <line class="burger" x1="3" y1="9" x2="27" y2="9"/>
+            <line class="burger" x1="3" y1="15" x2="27" y2="15"/>
+            <line class="burger" x1="3" y1="21" x2="23" y2="21"/>        
+        </symbol>    
+
+        <symbol id="close" class="close__svg" viewBox="0 0 30 30">
+            <rect width="30" height="30" fill="transparent"/>
+            <line class="burger" x1="3" y1="3" x2="27" y2="27"/>
+            <line class="burger" x1="3" y1="27" x2="27" y2="3"/>
+        </symbol>
+</svg>
+</html>

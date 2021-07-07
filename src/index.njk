@@ -12,7 +12,7 @@ layout: 'base.njk'
     <h2 class="name">Matthew Davison</h2>
     <p class="role">I'm a Developer. I develop websites, android apps and classical games!</p>     
     
-    <button href="#home" class="down-pointer">
+    <a href="#home" class="down-pointer">
         <svg width="18.5" height="30.5" viewBox="0 0 18.5 30.5">                
             <g transform="matrix(3.8 0 0 3.8 3.4e-7 0)">
                 <ellipse class="class1" cx="2.4" cy="4" rx="2.2" ry="3.8" />
@@ -183,7 +183,7 @@ layout: 'base.njk'
 
 <section class="contact" aria-label="Contact Me" id="contact"  >
     <h1>Contact Me</h1>
-    <form class="contact-form" aria-label="Contact Form" action="https://formspree.io/f/xgeryark" method="POST"
+    <form class="contact-form" aria-label="Contact Form" netlify
         autocomplete="off">
         <label class="form-name" for="name">Name:
             <input type="text" aria-label="name" name="name" id="name" required pattern="^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"></label> 
