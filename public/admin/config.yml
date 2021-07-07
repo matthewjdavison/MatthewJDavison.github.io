@@ -51,6 +51,18 @@ collections:
         name: "imageFeaturedAlt"
         widget: "string"
 
+      - label: "Project Classes"
+        name: "classes"
+        widget: "select"
+        multiple: true
+        min: 2
+        max: 2
+        options:
+          - { label: "Project", value: "project" }
+          - { label: "Light", value: "project--light" }
+          - { label: "Dark", value: "project--dark" }
+        default: ["project"]
+
       - label: "Body"
         name: "body"
         widget: "markdown"
