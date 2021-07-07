@@ -2,8 +2,9 @@
 title: Personal Website
 author: Matthew Davison
 date: 2021-07-06
-tags: ["featured"]
-imageFeatured: /assets/img/primary-portfolio.jpg
+tags: 
+    - featured
+imageFeatured: /assets/projects/primary-portfolio.jpg
 imageFeaturedAlt: a pair of glasses on a closed laptop
 description: This project was creating the website you're currently browsing! I'll be giving you some insight into how I made this site from ground-up.
 ---

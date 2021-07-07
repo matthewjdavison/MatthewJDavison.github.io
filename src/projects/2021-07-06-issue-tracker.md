@@ -7,8 +7,7 @@ author: Matthew Davison
 date: 2021-07-06
 tags:
   - post
-imageFeatured: /assets/img/portfolio/IssueTracker/LoginScreen960.png
-images: []
+imageFeatured: /assets/projects/IssueTracker/LoginScreen960.png
 imageFeaturedAlt: The login screen for my Issue Tracker Project
 ---
 
