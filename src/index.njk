@@ -37,9 +37,8 @@ layout: 'base.njk'
     <h1>My Portfolio</h1>
     
     <ul class="projects" aria-label="Projects">    
-
-        {%- for post in collections.featured -%}
-            <figure class="project">
+        {% for post in collections.featured %}
+            <figure class="{% for class in post.data.classes %}{{class}} {% endfor %}">           
                 <img src="{{ post.data.imageFeatured }}" alt="{{ post.data.imageFeaturedAlt }}" class="project__image">
                 <span class="fa-solid fa-hand-pointer"></span>
                 <figcaption class="project__caption">
@@ -64,9 +63,9 @@ layout: 'base.njk'
                     </section>
                 </aside>
             </figure>
-        {%- endfor -%}
-        {%- for post in collections.post -%}
-            <figure class="project">
+        {% endfor %}
+        {% for post in collections.post %}
+            <figure class="{% for class in post.data.classes %}{{class}} {% endfor %}">           
                 <img src="{{ post.data.imageFeatured }}" alt="{{ post.data.imageFeaturedAlt }}" class="project__image">
                 <span class="fa-solid fa-hand-pointer"></span>
                 <figcaption class="project__caption">
@@ -91,7 +90,7 @@ layout: 'base.njk'
                     </section>
                 </aside>
             </figure>
-        {%- endfor -%}
+        {% endfor %}
     </ul>
 
     
