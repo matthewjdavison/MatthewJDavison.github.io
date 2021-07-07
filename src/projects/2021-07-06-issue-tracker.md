@@ -9,6 +9,9 @@ tags:
   - post
 imageFeatured: /assets/projects/IssueTracker/LoginScreen960.png
 imageFeaturedAlt: The login screen for my Issue Tracker Project
+classes:
+  - project
+  - project--light
 ---
 
 The issue tracker was a bit of an ambitous project- It was my first reason project, so I had no idea how to handle things. It was also my first and currently my only ASP.Net Core project using the "MVC" structure. When creating this project, I had no idea how to do CSS and I was heavily depending on divs, rather than using the most appropriate elements (such as sections, articles etc).
