@@ -6,7 +6,7 @@ author: Matthew Davison
 date: 2021-07-06
 tags:
   - featured
-imageFeatured: /assets/projects/primary-portfolio.jpg
+imageFeatured: /assets/projects/PersonalWebsite/primary-portfolio.jpg
 imageFeaturedAlt: a pair of glasses on a closed laptop
 classes:
   - project
