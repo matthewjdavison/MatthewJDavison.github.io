@@ -19,6 +19,14 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}      
       - {label: "Tags", name: "tags", widget: "list", field: {label: "Tag", name: "tag_name", widget: "string", default: "post"}}
       - {label: "Featured Image", name: "imageFeatured", widget: "image"}
-      - {label: "Other Images", name: "images", widget: "list", field: {label: "Image"}, name: "image_source", widget: "image"}
-      - {label: "Image Alt", name: "imageAlt", widget: "string"}
+      - {
+        label: "Other Images", 
+        name: "images", 
+        widget: "list", 
+        field: {
+          label: "Image"}, 
+          name: "image_source", 
+          widget: "image"
+          }
+      - {label: "Image Alt", name: "imageFeaturedAlt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
