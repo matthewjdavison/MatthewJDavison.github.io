@@ -876,6 +876,7 @@ nav {
 }
 
 .fa-hand-pointer::before {
+  content: '\f25a';
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   position: absolute;
