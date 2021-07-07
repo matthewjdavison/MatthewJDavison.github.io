@@ -7,5 +7,8 @@ tags:
   - post
 imageFeatured: https://picsum.photos/id/104/960
 imageFeaturedAlt: 960 by 960 picsum image
+classes:
+  - project
+  - project--light
 ---
 This is a placeholder project.
