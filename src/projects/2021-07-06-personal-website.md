@@ -6,7 +6,7 @@ author: Matthew Davison
 date: 2021-07-06
 tags:
   - featured
-imageFeatured: /assets/img/primary-portfolio.jpg
+imageFeatured: /assets/projects/primary-portfolio.jpg
 imageFeaturedAlt: a pair of glasses on a closed laptop
 ---
 <style>
@@ -17,7 +17,7 @@ imageFeaturedAlt: a pair of glasses on a closed laptop
 I started this project back at the start of June. I decided to create it after seeing countless recruiters state "We can get a much clearer image of who we are hiring when they have a personal website!". One of my biggest concerns while job searching was always "Are they getting a good image of me via my Resume alone?" so I instantly fell in love with that idea. The first question I had was: "Well, okay... how should I do this?" Prior to this, I only had made one web project- my issue tracker. I had no experience designing websites- nor did I even know of any designing tools.
 
 <aside>
-  <img class="portfolio-pull-right" src="/assets/figma_design.png" alt="Figma Design">
+  <img class="portfolio-pull-right" src="/assets/projects/figma_design.png" alt="Figma Design">
 </aside>
 
 The answer was: Figma and Pinterest. <br><br> 
@@ -27,9 +27,9 @@ Once I completed that video and armed with my new found knowledge, I created the
 The most important part starts now: CSS, or rather SCSS. I created a 'src/scss' folder and then created a folder for each section ('src/scss/portfolio/') and then made seperate partials for each component in the section, which were then linked into a partial with the same name as the section ('src/scss/portfolio/_portfolio.scss'). You might ask "Isn't that a bit overkill?" and it might be... but it certainly made it very easy to read my CSS and keep track of where to make changes when I had to.
 
  <aside>
-   <img class="portfolio-pull-left" src="/assets/partials.png" alt="Screenshot of partials" /> 
+   <img class="portfolio-pull-left" src="/assets/projects/partials.png" alt="Screenshot of partials" /> 
  </aside>
 
-
 Once all the partials were created and linked into a 'main.scss' in the root of the scss folder, the design was done. At that point, I started writing... well, this. I started filling out the details of the projects. After I finish doing that, I'll likely make a backup, as I recently saw another video about 'templating languages'. That will be incredibly helpful for adding new projects to this website in the future, as current I have to manually add them...
+
 </p>
