@@ -8,6 +8,9 @@ tags:
   - featured
 imageFeatured: /assets/projects/primary-portfolio.jpg
 imageFeaturedAlt: a pair of glasses on a closed laptop
+classes:
+  - project
+  - project--dark
 ---
 <style>
 
