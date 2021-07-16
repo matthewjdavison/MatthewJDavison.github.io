@@ -1,0 +1,17 @@
+.project_content p {
+    @include container(85%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.project_content .modal-full-width {
+    clear: both;
+}
+.project__summary{
+    @include container(85%);
+    position: absolute;
+    bottom: 1em;
+    padding: 1rem;
+    background: var(--clr-accent-700);
+    margin-bottom: 1rem;    
+    color: var(--clr-black);
+}

@@ -4,8 +4,6 @@ let anyModalOpen = false;
 function openModal(e, linkClass){
 if (!anyModalOpen) {
         const modalToggle = e.target.closest(linkClass);
-        console.log(modalToggle);
-        // console.log(modalToggle);
         if (modalToggle) {
             const modal = modalToggle.parentElement.nextElementSibling;
             console.log(modal);
@@ -30,7 +28,6 @@ resumesLink.addEventListener("click", (e) => openModal(e, '.modal__link'));
 // ====================================================== //
 
 const projects = document.querySelector('.projects').children;
-console.log(projects);
 for (let i = 0; i < projects.length; i++){
     projects[i].onkeydown = (e) => {
         if(e.keyCode === 13){

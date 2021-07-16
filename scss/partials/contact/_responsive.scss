@@ -1,0 +1,85 @@
+@include for-small-phone-only {
+    .contact-form {
+        margin: auto 0.5rem;
+    }
+    label {
+        margin-bottom: 2px;
+        font-size: 0.5rem;        
+        
+    }
+    input, textarea {
+        border-radius: 3.5px;
+        border-width: 0.5px;
+        margin-top: 0.25em;
+        margin-bottom: 10px;
+    }
+    input{
+        height: 22.5px;
+    }
+
+    
+    label:not(:first-of-type) {
+        margin-top: 2px;
+    }
+
+    .form-submit {
+        height: 30px;
+        margin: 1rem 0;
+        font-size: 7px;
+    }
+}
+
+// @include mq($bp-phone){
+//     .contact-form {        
+//         grid-template-areas: 
+//         "name email"
+//         "subject ."
+//         "message message"
+//         ". submit";
+
+//         column-gap: 1rem;
+//     }
+//     .form-name {
+//         grid-area: name;
+//     }
+//     .form-email {
+//         grid-area: email;
+//     }
+//     .form-subject {
+//         grid-area: subject;
+//     }
+//     .form-message {
+//         grid-area: message;
+//     }
+//     .form-submit {
+//         grid-area: submit;
+//     }
+//     .contact-form label:not(:first-of-type){
+//         margin-top: 0;
+//     }
+// }
+// @include mq($bp-tablet-portrait){
+
+// }
+// @include mq($bp-tablet-landscape){
+  
+// }
+// @include mq($bp-desktop){
+    
+// }
+// @include mq($bp-big-desktop){
+
+// }
+// @include mq($bp-huge-desktop){
+//     .contact {
+//         width: 60vw;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+
+//     .contact-form {
+//         margin-left: 0;
+//         margin-right: 0;
+//         width: 100%;
+//     }
+// }

@@ -1,0 +1,40 @@
+.profile {
+	margin-top: auto;    
+    margin-bottom: auto;    
+}
+
+.profile-icon {
+	display: block;
+	height: 8.1875rem;
+	width: 8.1875rem;
+	background: url("assets/img/profile-icon.png"), white;
+	background-position-x: 5px;
+	background-size: contain;
+	border-radius: 50%;
+	margin: 0 auto 0;
+}
+
+.greet {
+	font-size: 1.25rem;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+	color: var(--clr-white);
+	// margin: 0;
+	padding: 0;
+	margin-top: 1.3em;
+}
+
+.name {
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+	color: var(--clr-accent-500);
+	margin: 0;
+	padding: 0;
+}
+
+.role {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}

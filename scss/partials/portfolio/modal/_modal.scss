@@ -1,0 +1,24 @@
+.portfolio-modal{
+    position: fixed;
+    font-size: 14px;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    background: var(--clr-primary-300);    
+    z-index: 10;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;     
+    color: var(--clr-white);
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+.project__header {
+    position: relative;
+}
+.portfolio-modal.open{
+    display:block;
+}
+@import 'content';
+@import 'close-icon';

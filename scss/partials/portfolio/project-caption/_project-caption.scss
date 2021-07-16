@@ -1,0 +1,26 @@
+.project__caption{
+    position: absolute;
+    color: white;
+    @supports not (inset:0){
+        top: 1.5em;
+        bottom: 1.5em;
+        left: 1.5em;
+        right: 1.5em;
+    }
+    @supports (inset:0){
+        inset: 1.5em;
+    }
+    opacity: 0;
+    transition: opacity ease-out 250ms;    
+    font-size: 1rem;
+}
+
+.project__caption .project__description{
+    visibility: hidden;
+}
+
+@import 'pointer';
+@import 'element-positioning';
+@import 'hover';
+
+@import 'first-child/first-child';

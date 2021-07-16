@@ -1,0 +1,11 @@
+
+.project:hover::before .project__caption, 
+.project:focus::before .project__caption{
+    transform: scale(1);
+}
+
+.project:hover .project__caption,
+.project:focus .project__caption
+{
+    opacity: 1;    
+}

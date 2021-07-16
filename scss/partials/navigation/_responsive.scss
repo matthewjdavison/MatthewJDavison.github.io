@@ -1,0 +1,71 @@
+@include for-small-phone-only {
+    .navigation-button {
+        top: 7.5px;
+        right: 5%;
+    }
+    .hamburger {
+        width: 15px;
+        height: 15px;
+    }
+    
+}
+@include for-tablet-portrait-up {
+    .navigation-button {
+        display: none;
+    }
+
+    .page-links{
+        transform: translateX(0) translateY(0);
+        flex-direction: row;
+        width:100%;
+        height: min-content;
+    }
+    .page-links a{
+        height: max-content;
+        padding: 1rem;
+    }
+    .page-links a:not(:last-of-type){
+        border-bottom: none;
+        border-right: white solid 1px;
+    }
+}
+
+// @include mq($bp-phone){
+//     .navigation-button {
+//         visibility:collapse;
+//     }
+//     nav{
+//         transform: translateX(0);        
+//         width: 100vw;
+//         height:0;
+//         min-height: 0;
+//     }
+//     .page-links {
+//         flex-direction: row;
+//         height: max-content;        
+//     }
+//     .page-links a{
+//         height: max-content;    
+//         padding-top: 0.5rem;
+//         padding-bottom: 0.5rem;     
+//     }
+//     .page-links a:not(:last-of-type){
+//         border-bottom: none;
+//         border-right: solid 1px white;
+//     }
+// }
+// @include mq($bp-tablet-portrait){
+
+// }
+// @include mq($bp-tablet-landscape){
+  
+// }
+// @include mq($bp-desktop){
+    
+// }
+// @include mq($bp-big-desktop){
+
+// }
+// @include mq($bp-huge-desktop){
+    
+// }

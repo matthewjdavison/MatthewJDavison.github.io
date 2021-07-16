@@ -1,0 +1,16 @@
+.close-modal{
+    position: fixed;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    stroke: var(--clr-black);
+    stroke-width: 2;
+    z-index: 1; 
+    width:28px;
+    height:28px;
+}
+.close-modal circle {
+    fill:var(--clr-white);
+    stroke:none;
+}

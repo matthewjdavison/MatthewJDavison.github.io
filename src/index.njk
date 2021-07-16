@@ -7,10 +7,12 @@ layout: 'base.njk'
 
 <section class="welcome" aria-label="Introduction" >        
 
-    <span class="profile-icon"></span>
-    <h3 class="greet">Hi! My name is </h3>
-    <h2 class="name">Matthew Davison</h2>
-    <p class="role">I'm a Developer. I develop websites, android apps and classical games!</p>     
+    <article class="profile">
+        <span class="profile-icon"></span>
+        <h3 class="greet">Hi! My name is </h3>
+        <h2 class="name">Matthew Davison</h2>
+        <p class="role">I'm a Developer. I develop websites, android apps and classical games!</p>     
+    </article>
     
     <a href="#home" class="down-pointer">
         <svg width="18.5" height="30.5" viewBox="0 0 18.5 30.5">                
@@ -24,14 +26,16 @@ layout: 'base.njk'
             </g>
         </svg>
     </a>
+
 </section>
+
 <section class="cta" aria-label="Call To Action" id="home"  >
     <h1 class="cta__heading">Struggle, Persevere, Conquer.</h1>
     <p class="quote">
         Regardless of the task or the challenges that come with it, if you struggle and persevere, you’ll eventually conquer any goal.
     </p>
     <p class="ending-statement">This is who I am.</p>
-    <button href="#portfolio" class="cta__button">See My Work</button>
+    <a href="#portfolio" class="cta__button">See My Work</a>
 </section>   
 <section class="portfolio" aria-label="Portfolio" id="portfolio" >
     <h1>My Portfolio</h1>

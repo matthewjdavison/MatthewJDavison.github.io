@@ -1,0 +1,11 @@
+.resume-items{
+    display:grid;
+    justify-content:center;  
+    grid-template-columns: repeat(2, max-content);  
+    gap: 1rem;      
+}
+.project__title {
+    grid-column: span 2;
+}
+
+@import 'resume-item';

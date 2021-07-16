@@ -1,0 +1,55 @@
+.project::before .project__caption {
+    content: '';
+    margin-left: 1px solid white;
+    margin-right: 1px solid white;
+    transform: scale(0);
+}
+
+.project::before,
+.project::after{
+    content: '';
+    position: absolute;
+    @supports not (inset:0){
+        top: .75em;
+        bottom: .75em;
+        left: .75em;
+        right: .75em;
+    }
+    @supports (inset:0){
+        inset: .75em;
+    }
+    opacity: 1;
+    transition: transform ease-out 250ms;
+}
+
+.project::before{
+    border-top: 1px solid var(--clr-white);
+    border-bottom: 1px solid var(--clr-white);
+    transform: scale(0,1);
+
+}
+.project::after{
+    border-left: 1px solid var(--clr-white);
+    border-right: 1px solid var(--clr-white);
+    transform: scale(1,0);
+}
+
+.project, .project img {    
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    object-fit: contain;
+    
+}
+.project img{
+    display: block;
+}
+.project {
+    background: var(--clr-primary-200);    
+    font-size: 1rem;
+}
+@import 'hover/project';
+@import 'project-caption/project-caption';
+
+@import 'modal/modal';

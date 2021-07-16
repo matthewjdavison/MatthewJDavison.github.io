@@ -1,0 +1,13 @@
+.portfolio{      
+    position: relative;
+    font-size: 1rem;
+
+}
+.project:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 1.5rem;
+}
+@import 'projects';
+@import 'project';
+@import 'responsive';

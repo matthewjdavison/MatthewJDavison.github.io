@@ -1,0 +1,15 @@
+.fa-hand-pointer::before{    
+    // content: "\f25a";
+   
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 400; 
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 1em;
+    right: 1em;
+    color: white;
+}
+
+.project--light .fa-hand-pointer::before{
+    color: black;
+}

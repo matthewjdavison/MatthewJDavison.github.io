@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./style.css">
     <title>{{title}}</title>
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    
 </head>
 <body>    
 {% include "header.njk" %}
@@ -23,13 +27,15 @@
       }
     });
   }
+
+
 </script>
 </body>
 <script src="./assets/js/index.js"></script>
 <script src="./assets/js/modal.js"></script>
-<script src="./assets/js/css-fixes.js"></script> <!-- This will be used for css bugs -->
+{# <script src="./assets/js/css-fixes.js"></script> #}
 
-<svg height="0px" aria-label="Hamburger icon">        
+<svg style="display:none;">        
         <symbol class="hamburger__svg" id="hamburger" aria-label="Hamburger icon" viewBox="0 0 30 30"> <!--25-->
             <rect width="30" height="30" fill="transparent"/>
 

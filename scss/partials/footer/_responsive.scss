@@ -1,0 +1,43 @@
+@include for-small-phone-only {
+    .footer {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1.3125rem;
+    }
+    .footer p {
+        font-size: 8px;
+    }
+    .social-icons{
+        margin-top: 0.5rem;
+        column-gap: 20px;
+    }
+    .social-icons span {
+        font-size: 15px;
+    }
+    .copyright::before{
+        width: 45.5px;
+        top: -7.5px;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+}
+
+// @include mq($bp-phone){
+
+// }
+// @include mq($bp-tablet-portrait){
+
+// }
+// @include mq($bp-tablet-landscape){
+  
+// }
+// @include mq($bp-desktop){
+    
+// }
+// @include mq($bp-big-desktop){
+
+// }
+// @include mq($bp-huge-desktop){
+    
+// }
