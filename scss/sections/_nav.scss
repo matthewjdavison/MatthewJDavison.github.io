@@ -9,6 +9,7 @@
     top: 16px;
     right:16px;
     background:transparent;
+    z-index: 2;
 }
 .close__svg{
     display:none;
@@ -24,6 +25,7 @@
     align-items: center;
     width: 75%;
     border-radius: 0 16px 16px 0;
+    z-index: 2;
 }
 
 .page-links a{
