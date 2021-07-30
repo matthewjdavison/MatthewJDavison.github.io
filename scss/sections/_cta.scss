@@ -45,23 +45,4 @@
     font-weight: var(--font-fw-regular);
     font-size: 24px;
 }
-.button {
-    font-family: var(--font-ff-poppins);
-    font-weight: var(--font-fw-medium);
-    font-size: 14px;
-    width: max-content;
-    height: max-content;
-    padding: 10px 16px;
-    text-transform: uppercase;
-    border-radius: 4px;
-}
-.primary-btn {
-    background: var(--clr-accent-500);
-    border: none;
-}
 
-.outline-btn {
-    border: 2px solid var(--clr-accent-500);
-    color: var(--clr-accent-500);
-    background: var(--clr-bg);
-}
