@@ -497,6 +497,11 @@ a {
   font-size: 1rem;
 }
 
+.projects .button {
+  grid-column: span 2;
+  justify-self: center;
+}
+
 .resumes {
   display: grid;
   width: calc(100% - 2rem);
@@ -634,6 +639,11 @@ a {
 
 .resume:first-of-type .resume__role {
   font-size: 48px;
+}
+
+.resumes .button {
+  grid-column: span 2;
+  justify-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
