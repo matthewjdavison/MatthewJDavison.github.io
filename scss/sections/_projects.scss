@@ -35,23 +35,6 @@
     margin-right: 1px solid white;
     transform: scale(0);
 }
-.project:first-of-type::before,
-.project:first-of-type::after {
-    position: absolute;
-    opacity: 1;
-    transition: transform ease-out 250ms;
-
-    @supports not (inset:0){
-        top: 2rem;
-        bottom: 2rem;
-        left: 2rem;
-        right: 2rem;
-    }
-    @supports (inset:0){
-        inset: 2rem;
-    }
-}
-
 .project::before,
 .project::after {
     position: absolute;
@@ -66,6 +49,22 @@
     }
     @supports (inset:0){
         inset: 1rem;
+    }
+}
+.project:first-of-type::before,
+.project:first-of-type::after {
+    position: absolute;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+
+    @supports not (inset:0){
+        top: 2rem;
+        bottom: 2rem;
+        left: 2rem;
+        right: 2rem;
+    }
+    @supports (inset:0){
+        inset: 2rem;
     }
 }
 .project::before{

@@ -353,28 +353,6 @@ p, a, samp {
   transform: scale(0);
 }
 
-.project:first-of-type::before,
-.project:first-of-type::after {
-  position: absolute;
-  opacity: 1;
-  transition: transform ease-out 250ms;
-}
-@supports not (inset: 0) {
-  .project:first-of-type::before,
-.project:first-of-type::after {
-    top: 2rem;
-    bottom: 2rem;
-    left: 2rem;
-    right: 2rem;
-  }
-}
-@supports (inset: 0) {
-  .project:first-of-type::before,
-.project:first-of-type::after {
-    inset: 2rem;
-  }
-}
-
 .project::before,
 .project::after {
   position: absolute;
@@ -394,6 +372,28 @@ p, a, samp {
   .project::before,
 .project::after {
     inset: 1rem;
+  }
+}
+
+.project:first-of-type::before,
+.project:first-of-type::after {
+  position: absolute;
+  opacity: 1;
+  transition: transform ease-out 250ms;
+}
+@supports not (inset: 0) {
+  .project:first-of-type::before,
+.project:first-of-type::after {
+    top: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+  }
+}
+@supports (inset: 0) {
+  .project:first-of-type::before,
+.project:first-of-type::after {
+    inset: 2rem;
   }
 }
 
