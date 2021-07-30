@@ -1,186 +1,65 @@
 ---
-title: 'Matthew Davison'
-layout: 'base.njk'
+title: "Matthew Davison"
+layout: "base.njk"
 ---
 
+<section class="intro" id="intro">
+  <img alt="" class="intro__profile-picture" />
+  <h3 class="intro__greet">Hi! My name is</h3>
+  <h1 class="intro__name">Matthew Davison</h1>
+  <h2 class="intro__role">
+    I’m a Developer. I develop websites, android apps and classical games!
+  </h2>
+  <a href="#cta" class="intro_scroll-button">   
+    <svg class="intro__scroll-svg" height="calc(16px*32)" viewBox="0 0 8 16">
+  <ellipse fill="none" stroke="#000000"
+     stroke-width="0.1"
+     cx="4" cy="8"
+     rx="3.95" ry="7.95" />
+  <path d="m 3.85,2.7499997 0.3,0 v 9 h -0.3 z"/>
+  <path d="m 3,11.75 h 2 l -1,1.5 z" />
+</svg>
 
-
-<section class="welcome" aria-label="Introduction" >        
-
-    <article class="profile">
-        <span class="profile-icon"></span>
-        <h3 class="greet">Hi! My name is </h3>
-        <h2 class="name">Matthew Davison</h2>
-        <p class="role">I'm a Developer. I develop websites, android apps and classical games!</p>     
-    </article>
-    
-    <a href="#home" class="down-pointer">
-        <svg width="18.5" height="30.5" viewBox="0 0 18.5 30.5">                
-            <g transform="matrix(3.8 0 0 3.8 3.4e-7 0)">
-                <ellipse class="class1" cx="2.4" cy="4" rx="2.2" ry="3.8" />
-                <g>
-                    <rect x="2.2" y="1.5" width=".26" height="4" />
-                    <path transform="matrix(1.9 0 0 .99 -.094 1.6)" d="m1.3 5-.78-1.3 1.5-.02z"
-                        style="stroke-width:0" />
-                </g>
-            </g>
-        </svg>
-    </a>
-
+  </a>
 </section>
 
-<section class="cta" aria-label="Call To Action" id="home"  >
-    <h1 class="cta__heading">Struggle, Persevere, Conquer.</h1>
-    <p class="quote">
-        Regardless of the task or the challenges that come with it, if you struggle and persevere, you’ll eventually conquer any goal.
-    </p>
-    <p class="ending-statement">This is who I am.</p>
-    <a href="#portfolio" class="cta__button">See My Work</a>
-</section>   
-<section class="portfolio" aria-label="Portfolio" id="portfolio" >
-    <h1>My Portfolio</h1>
-    
-    <ul class="projects" aria-label="Projects">    
-        {% for post in collections.featured %}
-            <figure class="{% for class in post.data.classes %}{{class}} {% endfor %}">           
-                <img src="{{ post.data.imageFeatured }}" alt="{{ post.data.imageFeaturedAlt }}" class="project__image">
-                <span class="fa-solid fa-hand-pointer"></span>
-                <figcaption class="project__caption">
-                    <h3 class="project__title">{{ post.data.title }}</h3>
-                    <p class="project__description"> {{ post.data.description }} </p>
-                    <a href="#" class="project__link">Read More</a>
-                </figcaption>
-                
-                <aside class="portfolio-modal">
-                    <svg class="close-modal">
-                        <circle cx="15" cy="15" r="14" />
-                        <line x1="7" y1="7" x2="23" y2="23" />
-                        <line x1="23" y1="7" x2="7" y2="23" />
-                    </svg>
-                    <h1 class="project__title">{{ post.data.title }}</h1>
-                    <header class="project__header">
-                        <img src="{{ post.data.imageFeatured }}" alt="{{ post.data.imageFeaturedAlt }}">
-                        <p class="project__summary">{{ post.data.description }}</p>
-                    </header>
-                    <section class="project_content">                        
-                        {{post.templateContent | safe}}
-                    </section>
-                </aside>
-            </figure>
-        {% endfor %}
-        {% for post in collections.post %}
-            <figure class="{% for class in post.data.classes %}{{class}} {% endfor %}">           
-                <img src="{{ post.data.imageFeatured }}" alt="{{ post.data.imageFeaturedAlt }}" class="project__image">
-                <span class="fa-solid fa-hand-pointer"></span>
-                <figcaption class="project__caption">
-                    <h3 class="project__title">{{ post.data.title }}</h3>
-                    <p class="project__description"> {{ post.data.description }} </p>
-                    <a href="#" class="project__link">Read More</a>
-                </figcaption>
-                
-                <aside class="portfolio-modal">
-                    <svg class="close-modal">
-                        <circle cx="15" cy="15" r="14" />
-                        <line x1="7" y1="7" x2="23" y2="23" />
-                        <line x1="23" y1="7" x2="7" y2="23" />
-                    </svg>
-                    <h1 class="project__title">{{ post.data.title }}</h1>
-                    <header class="project__header">
-                        <img src="{{ post.data.imageFeatured }}" alt="{{ post.data.imageFeaturedAlt }}">
-                        <p class="project__summary">{{ post.data.description }}</p>
-                    </header>
-                    <section class="project_content">                        
-                        {{post.templateContent | safe}}
-                    </section>
-                </aside>
-            </figure>
-        {% endfor %}
-    </ul>
-
-    
+<section class="cta" id="cta">
+  <h1 class="cta__motto">Struggle, Persevere, Conquer.</h1>
+  <p class="cta__quote">
+    Regardless of the task or the challenges that come with it, if you struggle
+    and persevere, you’ll eventually conquer any goal.
+  </p>
+  <p class="cta__personality-adjectives">This is who I am.</p>
+  <a href="#projects"class="button primary-btn">See my work</a>
 </section>
 
-<section class="about" aria-label="About Me" id="about"  >
-    <h1>About Me</h1>
-    
-    <samp>
-        > $matthew.Name <br>
-        Matthew Davison <br><br>
-
-        > $matthew.Age <br>
-        22 <br><br>
-
-        > $matthew.Origin <br>
-        Plymouth, Devon, UK <br><br>
-
-        > $matthew.Interests <br>
-        Listening to Music <br>
-        Watching Live Streamers <br>
-        Reading books and light novels <br>
-        Programming various projects <br>
-        Trying my hand at web design <br>
-        Sound design... just how do sounds make you feel emotions?! <br><br>
-
-        > $matthew.Bio <br>
-        Hello! I’m Matthew. I’m a designer and a programmer. I first discovered the marvels of the computing world
-        back in Primary School and since then, I’ve played around with creating various apps, websites, games and
-        software. <br><br>
-
-        > $matthew.Hire <br>
-        Fancy hiring me? Check out my resumes and CV! Note, both links lead to dropbox in a new tab!<br><br>
-
-        > $matthew.CV <br>
-        <a href="https://www.dropbox.com/sh/gbrg56rmi7nicmz/AAD-2XdgQlAmdo187PuQ_rhAa?dl=0" target='_blank' download="Matthew Davison CV" aria-label="Click here to download my CV!"> Click
-            here</a> to download my CV! Note: This is a full CV, not a Resume! <br><br>The CV doesn't have many job-specific keywords. Use the Resume for that!<br><br>
-
-
-        > $matthew.Resumes <br>
-        <a href="#" class="modal__link" id="resumesLink">Click here</a> to view all my role-specific resumes! <br> <br>
-
-        > $matthew.Disclaimer <br>
-        For privacy reasons, I haven't included details such as home address or mobile number on the CV or resumes.
-        Please email me if interested and I can share my mobile number then. Thank you!
-    </samp>
-
-    <aside class="portfolio-modal">
-        <svg class="close-modal">
-            <circle cx="15" cy="15" r="14" />
-            <line x1="7" y1="7" x2="23" y2="23" />
-            <line x1="23" y1="7" x2="7" y2="23" />
-        </svg>
-
-        <h1 class="project__title">Resumes</h1>          
-
-        <ul class="resume-items">
-
-        {% for resume in collections.resume %}
-            <figure class="resume__card" >
-                <a class="resume__card--link" href="{{resume.data.url}}" target='_blank' download="Matthew Davison - {{resume.data.role}} Resume" aria-label="Click here to download my {{resume.data.role}} Resume!">
-                    <p class="resume__role">{{resume.data.role}}</p>
-                </a>
-            </figure>
-        {% endfor %}
-        </ul>
-    </aside>
+<section class="resumes" id="resumes">
+    {% for resume in collections.resume %}
+  <div class="{% for class in resume.data.classes %}{{ class }} {% endfor %}">
+    <img
+      src="{{ resume.data.imageFeatured }}"
+      alt="{{ resume.data.imageFeaturedAlt }}"
+      class="resume__image" />
+    <div class="resume__caption">
+      <h3 class="resume__role">{{ resume.data.role }}</h3>
+    </div> 
+  </div>
+  {% endfor %}
 </section>
 
-<section class="contact" aria-label="Contact Me" id="contact"  >
-    <h1>Contact Me</h1>
-    <form name="contact" method="POST" class="contact-form" aria-label="Contact Form" netlify action="/success/index.html"
-        autocomplete="off">
-        <label class="form-name" for="name">Name:
-            <input type="text" aria-label="name" name="name" id="name" required pattern="^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"></label> 
-            <!-- I can't simply use [A-Za-z\s] since there might be someone called 'Jo'n Smith or John M. Smith, things like that. -->
-        <label class="form-email" for="email">Email
-            <input type="email" aria-label="email" name="email" id="email" required>
-        </label>
-        <label class="form-subject" for="subject">Subject
-            <input type="text" aria-label="subject" name="subject" id="subject" required>
-        </label>
-        <label class="form-message" for="message">Message
-            <textarea aria-label="message" name="message" id="message" required></textarea>
-        </label>
-        <button class="form-submit" type="submit">Send</button>
-    </form>
-</section>
+<section class="projects" id="projects">
+  {% for project in collections.project %}
+  <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}">
+    <img
+      src="{{ project.data.imageFeatured }}"
+      alt="{{ project.data.imageFeaturedAlt }}"
+      class="project__image" />
 
+    <div class="project__caption">
+      <h3 class="project__title">{{ project.data.title }}</h3>
+      <p class="project__description">{{ project.data.description }}</p>
+      <a href="#" class="project__link">Read More</a>
+    </div> 
+  </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,101 @@
+.resumes {
+	display: grid;
+	width: calc(100% - 2rem);
+	height: 100%;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: min-content;
+	padding-left: 0;
+    margin: 0 1rem;
+}
+
+.resume img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    object-fit: contain;
+}
+.resume {
+    grid-column: span 1;
+    grid-row: span 1;
+    position:relative;
+    
+}
+
+.resume:first-of-type {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.resume::before .resume__caption {
+    content: '';
+    margin-left: 1px solid white;
+    margin-right: 1px solid white;
+    transform: scale(0);
+}
+.resume::before,
+.resume::after {
+    position: absolute;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+
+    @supports not (inset:0){
+        top: .5rem;
+        bottom: .5rem;
+        left: .5rem;
+        right: .5rem;
+    }
+    @supports (inset:0){
+        inset: .5rem;
+    }
+}
+.resume::before{
+    content: "";
+    border-top: 1px solid var(--clr-white);
+    border-bottom: 1px solid var(--clr-white);
+    z-index: 1;
+    transform: scale(1.1,1)
+
+}
+.resume::after{
+    content: "";
+    border-left: 1px solid var(--clr-white);
+    border-right: 1px solid var(--clr-white);
+    transform: scale(1,1.1);
+}
+
+.resume__caption {
+    display: grid;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background: hsla(0, 0%, 0%, 0.33);
+    padding: 8px;    
+    grid-auto-flow: row;
+    z-index: 1;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.resume__role{
+    font-family: var(--font-ff-oxanium);
+    font-size: 24px;
+    font-weight: var(--font-fw-bold);
+
+    margin-bottom: 0;
+    
+}
+.resume:first-of-type .resume__caption {
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+}
+.resume:first-of-type .resume__role{
+    font-size: 48px; 
+}

@@ -4,8 +4,6 @@ description: This project was creating the website you're currently browsing!
   I'll be giving you some insight into how I made this site from ground-up.
 author: Matthew Davison
 date: 2021-07-06
-tags:
-  - featured
 imageFeatured: /projects/media/personal-website-primary-image.png
 imageFeaturedAlt: a pair of glasses on a closed laptop
 classes:

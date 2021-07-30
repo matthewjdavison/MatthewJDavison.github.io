@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-UK">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="./style.css">
     <title>{{title}}</title>
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    
+    <script src="https://kit.fontawesome.com/7d6e5093d6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
     
 </head>
 <body>    
 {% include "header.njk" %}
+  <main>
     {{ content | safe }}
+  </main>
 {% include "footer.njk" %}
 
 <script>
@@ -35,19 +37,4 @@
 <script src="./assets/js/modal.js"></script>
 {# <script src="./assets/js/css-fixes.js"></script> #}
 
-<svg style="display:none;">        
-        <symbol class="hamburger__svg" id="hamburger" aria-label="Hamburger icon" viewBox="0 0 30 30"> <!--25-->
-            <rect width="30" height="30" fill="transparent"/>
-
-            <line class="burger" x1="3" y1="9" x2="27" y2="9"/>
-            <line class="burger" x1="3" y1="15" x2="27" y2="15"/>
-            <line class="burger" x1="3" y1="21" x2="23" y2="21"/>        
-        </symbol>    
-
-        <symbol id="close" class="close__svg" viewBox="0 0 30 30">
-            <rect width="30" height="30" fill="transparent"/>
-            <line class="burger" x1="3" y1="3" x2="27" y2="27"/>
-            <line class="burger" x1="3" y1="27" x2="27" y2="3"/>
-        </symbol>
-</svg>
 </html>

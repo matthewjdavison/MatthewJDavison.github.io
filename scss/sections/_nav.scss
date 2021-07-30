@@ -1,0 +1,39 @@
+.navigation-button{
+    border: none;
+    width:30px;
+    height:30px;
+    padding: 0;
+    margin: 0;
+    stroke: var(--clr-accent-500);
+    position: fixed;
+    top: 16px;
+    right:16px;
+    background:transparent;
+}
+.close__svg{
+    display:none;
+}
+
+.page-links {
+    display:none;
+    position: fixed;
+    // display: grid;
+    grid-auto-flow: row;
+    height: 100%;
+    background: var(--clr-primary-250);    
+    align-items: center;
+    width: 75%;
+    border-radius: 0 16px 16px 0;
+}
+
+.page-links a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-ff-poppins);
+    text-transform: uppercase;
+    font-weight: var(--font-fw-extrabold);
+    font-size: 24px;
+    text-align: center;
+
+
+}

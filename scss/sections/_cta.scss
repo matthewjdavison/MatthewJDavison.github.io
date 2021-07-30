@@ -1,0 +1,67 @@
+.cta {
+    display:grid;
+    grid-auto-flow: row;
+    margin: 0 16px;
+    padding: 16px 8px;
+    --clr-bg: var(--clr-primary-300);
+    background: var(--clr-bg);
+    justify-items: center;
+    text-align: center;
+    height: 100vh;
+    row-gap: 2rem;
+}
+.cta__motto, 
+.cta__quote,
+.cta__personality-adjectives {
+    margin-bottom: 0;
+}
+.cta__motto {
+    font-family: var(--font-ff-oxanium);
+    font-weight: var(--font-fw-regular);
+    font-size: 48px;    
+}
+
+.cta__quote {
+    font-family: var(--font-ff-poppins);
+    font-weight: var(--font-fw-regular);
+    font-size: 1rem;
+}
+
+.cta__quote::before,
+.cta__quote::after {
+    font-family: var(--font-ff-oxanium);
+    font-weight: var(--font-fw-regular);
+    font-size: 2rem;
+    color: var(--clr-accent-500);
+}
+.cta__quote::before {
+    content: open-quote;
+}
+.cta__quote::after {
+    content: close-quote;
+}
+.cta__personality-adjectives{
+    font-family: var(--font-ff-poppins);
+    font-weight: var(--font-fw-regular);
+    font-size: 24px;
+}
+.button {
+    font-family: var(--font-ff-poppins);
+    font-weight: var(--font-fw-medium);
+    font-size: 14px;
+    width: max-content;
+    height: max-content;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.primary-btn {
+    background: var(--clr-accent-500);
+    border: none;
+}
+
+.outline-btn {
+    border: 2px solid var(--clr-accent-500);
+    color: var(--clr-accent-500);
+    background: var(--clr-bg);
+}

@@ -1,0 +1,70 @@
+.intro {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    row-gap: 8px;    
+    height:100vh;
+    
+}
+.intro__profile-picture {
+    margin-top: 32px;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: white;
+    background-image: url(assets/img/profile-icon.png);
+    background-size: cover;
+    background-position: 5px;
+}
+
+.intro__greet {
+    font-size: var(--font-fs-h3);
+    font-family: var(--font-ff-poppins);
+    font-weight: var(--font-fw-regular);
+}
+
+.intro__name {
+    font-size: var(--font-fs-h1);
+    color: var(--clr-accent-500);
+    font-family: var(--font-ff-oxanium);
+    font-weight: var(--font-fw-light);
+}
+
+.intro__role {
+    font-size: var(--font-fs-h2);
+    font-family: var(--font-ff-poppins);
+    font-weight: var(--font-fw-light);
+}
+
+// .intro_scroll-button {
+//     fill: transparent;
+//     stroke: white;
+//     width: 18.5px;
+//     height: 30.5px;
+// }
+
+.intro_scroll-button{        
+    fill: var(--clr-white);   
+    height: calc(16px*3);
+    width: calc(8px*3);    
+}
+
+.intro__scroll-svg {
+    height: calc(16px*3);
+    overflow: visible;
+}
+.intro_scroll-button ellipse{    
+    fill: none;
+    stroke: var(--clr-white);
+    stroke-width: 0.4px;
+}
+
+.ellipse //To be swapped for an SVG
+{
+    height:inherit;
+    width:inherit;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 32px;
+ }

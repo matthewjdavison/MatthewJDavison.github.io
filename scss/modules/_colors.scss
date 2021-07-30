@@ -15,6 +15,12 @@
     --clr-white: hsl(0, 0%, 99%);
     --clr-black: hsl(0, 0%, 8%);
     --clr-dim-gray: hsl(0, 0%, 41%);
+    
+}
+
+:root {
+    --clr-bg: var(--clr-primary-200); 
+    --clr-fg: var(--clr-white);
     --clr-brand-github: hsl(0, 0%, 100%);
     --clr-brand-twitter: hsl(0, 0%, 100%);
     --clr-brand-dribbble:  hsl(0, 0%, 100%);

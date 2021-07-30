@@ -2,18 +2,30 @@
 'modules/mixins', 
 'modules/colors',
 'modules/fonts',
-'modules/breakpoints';
+'modules/breakpoints',
+'modules/spacing';
 
 @import 
-'vendor/normalize',
+'vendor/global',
 'vendor/imports';
 
-@import
-'partials/global/global',
-'partials/navigation/navigation',
-'partials/welcome/welcome',
-'partials/cta/cta',
-'partials/portfolio/portfolio',
-'partials/about/about',
-'partials/contact/contact',
-'partials/footer/footer';
+// @import
+// 'partials/global/global',
+// 'partials/navigation/navigation',
+// 'partials/welcome/welcome',
+// 'partials/cta/cta',
+// 'partials/portfolio/portfolio',
+// 'partials/about/about',
+// 'partials/contact/contact',
+// 'partials/footer/footer';
+
+@import 
+'sections/nav',
+'sections/intro',
+'sections/cta',
+'sections/projects',
+'sections/resumes',
+'sections/about',
+'sections/contact',
+'sections/footer';
+
