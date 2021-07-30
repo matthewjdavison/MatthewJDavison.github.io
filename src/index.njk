@@ -40,6 +40,7 @@ layout: "base.njk"
       src="{{ resume.data.imageFeatured }}"
       alt="{{ resume.data.imageFeaturedAlt }}"
       class="resume__image" />
+      <div class="resume__overlay"></div>
     <div class="resume__caption">
       <h3 class="resume__role">{{ resume.data.role }}</h3>
     </div> 
@@ -49,12 +50,12 @@ layout: "base.njk"
 
 <section class="projects" id="projects">
   {% for project in collections.project %}
-  <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}">
+  <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}">    
     <img
       src="{{ project.data.imageFeatured }}"
       alt="{{ project.data.imageFeaturedAlt }}"
       class="project__image" />
-
+    <div class="project__overlay"></div>
     <div class="project__caption">
       <h3 class="project__title">{{ project.data.title }}</h3>
       <p class="project__description">{{ project.data.description }}</p>

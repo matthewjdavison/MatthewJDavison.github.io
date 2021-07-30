@@ -362,16 +362,16 @@ p, a, samp {
 @supports not (inset: 0) {
   .project::before,
 .project::after {
-    top: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
   }
 }
 @supports (inset: 0) {
   .project::before,
 .project::after {
-    inset: 1rem;
+    inset: 0.5rem;
   }
 }
 
@@ -384,16 +384,16 @@ p, a, samp {
 @supports not (inset: 0) {
   .project:first-of-type::before,
 .project:first-of-type::after {
-    top: 2rem;
-    bottom: 2rem;
-    left: 2rem;
-    right: 2rem;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
   }
 }
 @supports (inset: 0) {
   .project:first-of-type::before,
 .project:first-of-type::after {
-    inset: 2rem;
+    inset: 1rem;
   }
 }
 
@@ -419,10 +419,18 @@ p, a, samp {
   left: 8px;
   right: 8px;
   bottom: 8px;
-  background: rgba(0, 0, 0, 0.33);
   padding: 8px;
   grid-auto-flow: row;
   z-index: 1;
+}
+
+.project__overlay {
+  background: rgba(0, 0, 0, 0.33);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .project:hover .project__caption {
@@ -542,6 +550,28 @@ p, a, samp {
   }
 }
 
+.resume:first-of-type::before,
+.resume:first-of-type::after {
+  position: absolute;
+  opacity: 1;
+  transition: transform ease-out 250ms;
+}
+@supports not (inset: 0) {
+  .resume:first-of-type::before,
+.resume:first-of-type::after {
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+@supports (inset: 0) {
+  .resume:first-of-type::before,
+.resume:first-of-type::after {
+    inset: 1rem;
+  }
+}
+
 .resume::before {
   content: "";
   border-top: 1px solid var(--clr-white);
@@ -557,6 +587,15 @@ p, a, samp {
   transform: scale(1, 1.1);
 }
 
+.resume__overlay {
+  background: rgba(0, 0, 0, 0.33);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .resume__caption {
   display: grid;
   position: absolute;
@@ -564,7 +603,6 @@ p, a, samp {
   left: 8px;
   right: 8px;
   bottom: 8px;
-  background: rgba(0, 0, 0, 0.33);
   padding: 8px;
   grid-auto-flow: row;
   z-index: 1;

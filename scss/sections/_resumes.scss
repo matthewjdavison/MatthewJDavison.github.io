@@ -42,13 +42,29 @@
     transition: transform ease-out 250ms;
 
     @supports not (inset:0){
-        top: .5rem;
-        bottom: .5rem;
-        left: .5rem;
-        right: .5rem;
+        top: 0.5rem;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
     }
     @supports (inset:0){
-        inset: .5rem;
+        inset: 0.5rem;
+    }
+}
+.resume:first-of-type::before,
+.resume:first-of-type::after {
+    position: absolute;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+
+    @supports not (inset:0){
+        top: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    @supports (inset:0){
+        inset: 1rem;
     }
 }
 .resume::before{
@@ -66,14 +82,22 @@
     transform: scale(1,1.1);
 }
 
+.resume__overlay {
+    background: hsla(0, 0%, 0%, 0.33);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .resume__caption {
     display: grid;
     position: absolute;
     top: 8px;
     left: 8px;
     right: 8px;
-    bottom: 8px;
-    background: hsla(0, 0%, 0%, 0.33);
+    bottom: 8px;    
     padding: 8px;    
     grid-auto-flow: row;
     z-index: 1;
