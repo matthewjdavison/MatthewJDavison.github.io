@@ -34,6 +34,7 @@ layout: "base.njk"
 </section>
 
 <section class="resumes" id="resumes">
+  <h1 class="resumes_header">My Resumes</h1>
     {% for resume in collections.resume %}
   <div class="{% for class in resume.data.classes %}{{ class }} {% endfor %}">
     <img
@@ -52,6 +53,7 @@ layout: "base.njk"
 </section>
 
 <section class="projects" id="projects">
+  <h1 class="projects_header">My Projects</h1>
   {% for project in collections.project %}
   <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}">    
     <img
