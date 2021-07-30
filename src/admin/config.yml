@@ -74,8 +74,11 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     media_folder: "public/resumes/media"
-    public_folder: "/resumes/media"
+    public_folder: "/resumes/media"    
     fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
       - label: "Role"
         name: "role"
         widget: "string"
