@@ -41,9 +41,11 @@ layout: "base.njk"
       alt="{{ resume.data.imageFeaturedAlt }}"
       class="resume__image" />
       <div class="resume__overlay"></div>
-    <div class="resume__caption">
-      <h3 class="resume__role">{{ resume.data.role }}</h3>
-    </div> 
+      <a href="{{ resume.data.url }}">
+        <div class="resume__caption">
+          <h3 class="resume__role">{{ resume.data.role }}</h3>
+        </div> 
+      </a>
   </div>
   {% endfor %}
 </section>
