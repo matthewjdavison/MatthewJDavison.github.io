@@ -494,7 +494,7 @@ section {
   padding-left: 0;
 }
 
-.project img {
+.project .project__image {
   display: block;
   width: 100%;
   height: auto;
@@ -705,7 +705,7 @@ section {
   stroke-width: 1px;
 }
 
-.project .modal__image {
+.modal__image {
   position: static;
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 255, 196, 0.3);
@@ -805,6 +805,11 @@ section {
       inset: 1.1rem 1.1rem 1.1rem 1.1rem;
     }
   }
+
+  .modal__header {
+    padding: 10px 30px;
+    top: 30rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   @supports not (inset: 0) {
@@ -848,6 +853,11 @@ section {
   .project:first-of-type .project__link {
     font-size: 44px;
   }
+
+  .modal__header {
+    padding: 1.5rem 20rem;
+    top: 30rem;
+  }
 }
 @media screen and (min-width: 1900px) {
   @supports not (inset: 0) {
@@ -888,6 +898,16 @@ section {
 
   .projects {
     width: calc(100vw - 512px);
+  }
+
+  .modal__image {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+
+  .modal__header {
+    top: 2rem;
   }
 }
 .resumes {

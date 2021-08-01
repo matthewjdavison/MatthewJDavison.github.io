@@ -8,7 +8,7 @@
 	padding-left: 0;    
 }
 
-.project img {
+.project .project__image {
     display: block;
     width: 100%;
     height: auto;
@@ -194,7 +194,7 @@
     stroke: black;
     stroke-width: 1px;
 }
-.project .modal__image {
+.modal__image {
     position: static;
     margin-bottom: 1rem;       
     border-bottom: 1px solid hsla(166, 100%, 50%, 0.3);
@@ -255,8 +255,7 @@
     }
     .projects .button {
         grid-column: span 4;
-    }
-    
+    }  
     .project__summary {
         font-size: 18px
     }
@@ -266,12 +265,15 @@
     .project:first-of-type .project__link{
         font-size: 30px;    
     }
-
     .project:first-of-type::before,
     .project:first-of-type::after {
         @include inset(1.1rem);
-    }     
-    
+    }   
+    .modal__header {
+        padding: 10px 30px;
+        top: 30rem;
+    }  
+
 }
 
 @include for-desktop {
@@ -300,6 +302,12 @@
     .project:first-of-type .project__link{
         font-size: 44px;    
     }
+    
+    .modal__header {
+        padding: 1.5rem 20rem;
+        top: 30rem;
+
+    }  
 }
 
 @include for-huge-desktop {
@@ -316,6 +324,15 @@
     }   
     .projects {
         width: calc(100vw - 512px);
+    }
+    .modal__image {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    .modal__header {
+        top: 2rem;
     }
   
 }
