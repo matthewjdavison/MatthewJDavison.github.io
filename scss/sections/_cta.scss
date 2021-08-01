@@ -1,7 +1,8 @@
 .cta {
     display:grid;
     grid-auto-flow: row;
-    margin: 0 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     padding: 16px 8px;
     --clr-bg: var(--clr-primary-300);
     background: var(--clr-bg);
@@ -19,6 +20,7 @@
     font-family: var(--font-ff-oxanium);
     font-weight: var(--font-fw-regular);
     font-size: 48px;    
+    color: var(--clr-white);
 }
 
 .cta__quote {

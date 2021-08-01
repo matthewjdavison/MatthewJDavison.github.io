@@ -34,15 +34,16 @@ layout: "base.njk"
 </section>
 
 <section class="resumes" id="resumes">
-  <h1 class="resumes_header">My Resumes</h1>
+  <h1 class="resumes_header">Featured Resumes</h1>
     {% for resume in collections.resume %}
-  <div class="{% for class in resume.data.classes %}{{ class }} {% endfor %}">
+  <div class="{% for class in resume.data.classes %}{{ class }} {% endfor %}" tabindex="0">
+    <a class="resume__link" href="{{ resume.data.url }}" tabindex="-1">
     <img
       src="{{ resume.data.imageFeatured }}"
       alt="{{ resume.data.imageFeaturedAlt }}"
       class="resume__image" />
       <div class="resume__overlay"></div>
-      <a href="{{ resume.data.url }}">
+      
         <div class="resume__caption">
           <h3 class="resume__role">{{ resume.data.role }}</h3>
         </div> 
@@ -53,9 +54,9 @@ layout: "base.njk"
 </section>
 
 <section class="projects" id="projects">
-  <h1 class="projects_header">My Projects</h1>
+  <h1 class="projects_header">Featured Projects</h1>
   {% for project in collections.project %}
-  <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}">    
+  <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}"  tabindex="0">    
     <img
       src="{{ project.data.imageFeatured }}"
       alt="{{ project.data.imageFeaturedAlt }}"
@@ -63,10 +64,83 @@ layout: "base.njk"
     <div class="project__overlay"></div>
     <div class="project__caption">
       <h3 class="project__title">{{ project.data.title }}</h3>
-      <p class="project__description">{{ project.data.description }}</p>
-      <a href="#" class="project__link">Read More</a>
+      <p class="project__summary">{{ project.data.summary }}</p>
+      <a href="#" class="project__link" tabindex="-1">Read More</a>
     </div> 
+    <div class="project__modal">
+      <svg class="close-modal" viewBox="0 0 16 16">
+        <ellipse cx="8" cy="8" rx="7.5" ry="7.5" />
+        <g>
+          <path d="M 3.76,3.76 12.24,12.24" />
+          <path d="M 3.76,12.24 12.24,3.76" />
+        </g>       
+      </svg>
+      <img class="modal__image" 
+      src="{{ project.data.imageFeatured }}"
+      alt="{{ project.data.imageFeaturedAlt }}"/>
+    <header class="modal__header">
+      <h1 class="modal__title">{{ project.data.title }}</h1>
+      <h2 class="modal__slogan">{{ project.data.slogan }}</h2>      
+    </header>
+    <p class="modal__summary">{{ project.data.summary }}</p>      
+    <section class="modal__content"> {{ project.templateContent | safe }}</section>
+    </div>
   </div>  
   {% endfor %}
   <a href="https://www.dropbox.com/sh/di10shxeaj4cif3/AADW6VV-QN3Dxd1ohzFGfQZ_a?dl=0" target="_blank" class="button primary-btn">View all my projects on GitHub</a>
+</section>
+
+<section class="about">
+  <h1>About Me</h1>
+    <h2 class="about__header">About - Visual Studio Code</h2>
+    <p class="about__body"><samp>
+      > $matthew.Name <br>
+      Matthew Davison <br><br>
+
+      > $matthew.Age <br>
+      22 <br><br>
+
+      > $matthew.Origin <br>
+      Plymouth, Devon, UK <br><br>
+
+      > $matthew.Interests <br>
+      Listening to Music <br>
+      Watching Live Streamers <br>
+      Reading books and light novels <br>
+      Programming various projects <br>
+      Trying my hand at web design <br>
+      Sound design... just how do sounds make you feel emotions?! <br><br>
+
+      > $matthew.Bio <br>
+      Hello! I’m Matthew. I’m a designer and a programmer. I first discovered the marvels of the computing world
+      back in Primary School and since then, I’ve played around with creating various apps, websites, games and
+      software. <br><br>
+
+      > $matthew.Hire <br>
+      Fancy hiring me? Check out my resumes and CV! Note, both links lead to dropbox in a new tab!<br><br>
+    </samp></p>
+</section>
+
+<section class="contact">
+  <h1 class="contact__header">Contact Me</h1>
+  <form action="" class="contact__form">
+    <label for="Name" class="contact__label">Name:
+      <input aria-label="Name Input Field" type="text" placeholder="Placeholder" class="contact__input"/>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+    <label for="Email" class="contact__label">Email:
+      <input aria-label="Email Input Field" type="text" placeholder="Placeholder" class="contact__input"/>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+    <label for="Subject" class="contact__label">Subject:
+      <input aria-label="Subject Input Field" type="text" placeholder="Placeholder" class="contact__input"/>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+    <label for="Message" class="contact__label">Message:
+      <textarea aria-label="Message Input Field" type="text" placeholder="Placeholder" class="contact__textarea"></textarea>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+
+    <button class="button outline-btn contact__submit">Submit Form</button>
+  </form>
 </section>

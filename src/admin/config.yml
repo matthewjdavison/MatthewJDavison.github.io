@@ -20,8 +20,8 @@ collections:
         name: "title"
         widget: "string"
 
-      - label: "Description"
-        name: "description"
+      - label: "Summary"
+        name: "summary"
         widget: "markdown"
 
       - label: "Author"

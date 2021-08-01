@@ -1,0 +1,19 @@
+.footer {
+    display: grid;
+    row-gap: 1rem;
+    background: var(--clr-primary-300);
+    @include padding-block(1rem);
+}
+.footer_text {
+    justify-self: center;
+    margin-bottom: 0;
+}
+.social-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 3rem;
+}
+.social-icon {
+    font-size:1.75rem;
+}

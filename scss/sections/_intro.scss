@@ -6,6 +6,7 @@
     row-gap: 8px;    
     height:100vh;
     
+    
 }
 .intro__profile-picture {
     margin-top: 32px;
@@ -18,6 +19,12 @@
     background-position: 5px;
 }
 
+.intro__greet,
+.intro__name,
+.intro__role {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
 .intro__greet {
     font-size: var(--font-fs-h3);
     font-family: var(--font-ff-poppins);
@@ -28,7 +35,7 @@
     font-size: var(--font-fs-h1);
     color: var(--clr-accent-500);
     font-family: var(--font-ff-oxanium);
-    font-weight: var(--font-fw-light);
+    font-weight: var(--font-fw-light);    
 }
 
 .intro__role {
@@ -49,6 +56,10 @@
     height: calc(16px*3);
     width: calc(8px*3);    
 }
+.intro_scroll-button:hover,
+.intro_scroll-button:focus {        
+    fill: var(--clr-accent-500);   
+}
 
 .intro__scroll-svg {
     height: calc(16px*3);
@@ -58,6 +69,10 @@
     fill: none;
     stroke: var(--clr-white);
     stroke-width: 0.4px;
+}
+.intro_scroll-button:hover ellipse,
+.intro_scroll-button:focus ellipse{    
+    stroke: var(--clr-accent-500);
 }
 
 .ellipse //To be swapped for an SVG
