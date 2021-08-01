@@ -152,8 +152,9 @@ section {
 }
 
 .page-links {
-  display: none;
+  display: grid;
   position: fixed;
+  transform: translateX(-100%);
   grid-auto-flow: row;
   height: 100%;
   background: var(--clr-primary-250);
@@ -161,6 +162,7 @@ section {
   width: 75%;
   border-radius: 0 16px 16px 0;
   z-index: 2;
+  transition: transform 250ms ease-in;
 }
 
 .page-links a {
@@ -171,6 +173,10 @@ section {
   font-weight: var(--font-fw-extrabold);
   font-size: 24px;
   text-align: center;
+}
+
+.nav-open .page-links {
+  transform: translateX(0);
 }
 
 .intro {

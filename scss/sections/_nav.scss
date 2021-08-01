@@ -16,8 +16,9 @@
 }
 
 .page-links {
-    display:none;
+    display:grid;
     position: fixed;
+    transform: translateX(-100%);
     // display: grid;
     grid-auto-flow: row;
     height: 100%;
@@ -26,6 +27,7 @@
     width: 75%;
     border-radius: 0 16px 16px 0;
     z-index: 2;
+    transition: transform 250ms ease-in;
 }
 
 .page-links a{
@@ -38,4 +40,8 @@
     text-align: center;
 
 
+}
+
+.nav-open .page-links {
+    transform: translateX(0);
 }
