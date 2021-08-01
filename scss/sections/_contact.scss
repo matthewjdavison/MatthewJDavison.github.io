@@ -28,7 +28,7 @@
     font-family: var(--font-ff-poppins);
     font-style: normal;
     font-weight: var(--font-fw-normal);
-    font-size: 1rem;
+    font-size: var(--font-fs-body-normal);
     color: #616161;
     border-radius: 7px;
     padding-top: 10px;
@@ -60,5 +60,24 @@
     margin-left: 16px;
     margin-right: 16px;
     justify-self: right;
-    width:calc((100% - 2rem) / 2)
+    width: max-content;
+}
+
+@include for-tablet-portrait {  
+    .contact__form {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact__label[for="Subject"],
+    .contact__label[for="Message"]
+    {
+        grid-column: span 2;
+    }
+    .contact__submit {
+        grid-column-end: -1;
+    }
+    .contact__label,
+    .contact__input,
+    .contact__textarea {
+        font-size: var(--font-fs-body-normal);
+    }
 }

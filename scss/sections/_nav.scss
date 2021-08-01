@@ -1,4 +1,4 @@
-.navigation-button{
+.navigation-button {
     border: none;
     width:30px;
     height:30px;
@@ -45,3 +45,46 @@
 .nav-open .page-links {
     transform: translateX(0);
 }
+
+// ====================================================== //
+// ==================== Media Querys ==================== //
+// ====================================================== //
+
+@include for-tablet-portrait {
+    .navigation-button {
+        display: none;
+    }
+    .page-links {
+        position:fixed;
+        transform: translateX(0);
+        grid-auto-flow: column;
+        width: calc(100% - 4rem);
+        @include margin-inline(2rem);
+        height: 2rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+        align-content: center;
+        border: 1px solid var(--clr-primary-500);
+    }
+    .page-links a {        
+        line-height: 2rem;
+        height:2rem;
+        
+    }    
+    .page-links a:not(:last-child) {
+        border-right: 1px solid var(--clr-white);          
+    }
+}
+
+@include for-desktop {
+    .page-links {
+        width: calc(100% - 400px);
+        @include margin-inline(200px);
+    }
+  }
+  @include for-big-desktop {
+    .page-links {
+        width: calc(100% - 512px);
+        @include margin-inline(256px);
+    }
+  }

@@ -1,12 +1,11 @@
 .resumes {
 	display: grid;
-	width: calc(100% - 2rem);
+	width: calc(100vw - 2rem);
 	height: 100%;
 	justify-content: center;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: min-content;
-	padding-left: 0;
-    @include margin-inline(1rem);    
+	padding-left: 0;     
 }
 
 .resume img {
@@ -133,7 +132,7 @@
 	justify-self: center;
     margin-top: 8px;
 }
-.resumes h1 {
+.resumes .resumes_header {
     grid-column: span 2;
 }
 
@@ -144,4 +143,51 @@
 .resume:hover::after,
 .resume:focus::after {
     transform: scale(1, 1.1);
+}
+
+@include for-tablet-portrait {
+    .resumes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .resumes .resumes_header {
+        grid-column: span 4;
+    }
+    .resumes .button {
+        grid-column: span 4;
+    }
+
+    
+    .resume:first-of-type::before,
+    .resume:first-of-type::after {
+        @include inset(1.1rem);
+    }   
+
+    
+}
+@include for-desktop {
+    .resume:first-of-type::before,
+    .resume:first-of-type::after,
+    .resume:first-of-type .project__caption {
+        @include inset(2rem);
+    }   
+    .resumes {
+        width: calc(100vw - 400px);
+    }
+}
+@include for-huge-desktop {
+    .resume::before,
+    .resume::after,
+    .resume:first-of-type .resume__caption {
+        @include inset(1rem);
+    } 
+
+    .resume:first-of-type::before,
+    .resume:first-of-type::after,
+    .resume:first-of-type .resume__caption {
+        @include inset(2rem);
+    }   
+
+    .resumes {
+        width: calc(100vw - 512px);
+    }
 }

@@ -18,7 +18,7 @@ p, a, samp {
 h1 {
   font-family: var(--font-ff-oxanium);
   font-weight: var(--font-fw-light);
-  font-size: 48px;
+  font-size: var(--font-fs-h1);
   text-align: center;
   color: var(--clr-accent-500);
   margin-bottom: 16px;
@@ -36,7 +36,7 @@ section {
 .button {
   font-family: var(--font-ff-poppins);
   font-weight: var(--font-fw-medium);
-  font-size: 14px;
+  font-size: var(--font-fs-body-large);
   width: max-content;
   height: max-content;
   padding: 10px 16px;
@@ -71,4 +71,18 @@ section {
   // outline: 2px solid var(--clr-bg);
   // box-shadow:0 0 0 5px hsl(166, 100%, 50%, 0.4)
   // filter: drop-shadow(0 0 5px hsl(166, 100%, 50%, 0.5));
+}
+
+
+
+@include for-desktop {
+  main {
+    @include margin-inline(200px);
+  }
+}
+
+@include for-big-desktop {
+  main {
+    @include margin-inline(256px);
+  }
 }

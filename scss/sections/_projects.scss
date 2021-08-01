@@ -1,12 +1,11 @@
 .projects {
 	display: grid;
-	width: calc(100% - 2rem);
+	width: calc(100vw - 2rem);
 	height: 100%;
 	justify-content: center;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: min-content;
-	padding-left: 0;
-    @include margin-inline(1rem);
+	padding-left: 0;    
 }
 
 .project img {
@@ -133,15 +132,16 @@
 .project__summary{
     display: none;
     font-family: var(--font-ff-poppins);
-    font-size: 1rem;
+    font-size: var(--font-fs-body-large);
     font-weight: var(--font-fw-regular);
 }
 .project__link{
     font-family: var(--font-ff-poppins);
-    font-size: 16px;
+    font-size: var(--font-fs-body-large);
     font-weight: var(--font-fw-bold);
     color: var(--clr-accent-500);
     text-decoration: underline;
+    align-self: end;
 }
 .project:first-of-type .project__caption {
     top: 16px;
@@ -157,20 +157,15 @@
 }
 .project:first-of-type .project__summary {
     display: block;
-    font-size: 14px;
 }
-
 .projects .button {
 	grid-column: span 2;
 	justify-self: center;
     margin-top: 16px;
 }
-
-
 .projects h1 {
     grid-column: span 2;
 }
-
 .project__modal {
     display: none;
     z-index: 10;
@@ -180,11 +175,8 @@
     left: 1rem;
     right: 1rem;
     bottom: 1rem;
-
     overflow-y: scroll;
-    
 }
-
 .close-modal {
     width: 2rem;
     height: 2rem;
@@ -220,7 +212,6 @@
     color:white;    
     text-align: left;
 }
-
 .modal__title::after,
 .modal__summary::after {
     content: "";
@@ -235,19 +226,15 @@
 .modal__title::after {
     background: hsla(0, 0%, 100%, 0.7);
 }
-
 .modal__summary, 
 .modal__content {
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
 .modal__summary {
     font-style: italic;
     text-align: center;
-    
 }
-
 .modal__summary::after{
     background: hsla(166, 100%, 50%, 0.7);
     width: calc(100% + 2rem);
@@ -255,7 +242,80 @@
     left: -1rem;
     margin-bottom: 2rem;
 }
-
 .project__modal.open {
     display: block;
+}
+
+@include for-tablet-portrait {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .projects .projects_header {
+        grid-column: span 4;
+    }
+    .projects .button {
+        grid-column: span 4;
+    }
+    
+    .project__summary {
+        font-size: 18px
+    }
+    .project:first-of-type .project__title{
+        font-size: 44px; 
+    }
+    .project:first-of-type .project__link{
+        font-size: 30px;    
+    }
+
+    .project:first-of-type::before,
+    .project:first-of-type::after {
+        @include inset(1.1rem);
+    }     
+    
+}
+
+@include for-desktop {
+    .project:first-of-type::before,
+    .project:first-of-type::after,
+    .project:first-of-type .project__caption {
+        @include inset(2rem);
+    }   
+    .projects {
+        width: calc(100vw - 400px);
+    }
+
+    .project__summary {
+        font-size: 24px
+    }
+    .project .project__title{
+        font-size: 28px; 
+    }
+    .project .project__link{
+        font-size: 22px;    
+    }
+
+    .project:first-of-type .project__title{
+        font-size: 56px; 
+    }
+    .project:first-of-type .project__link{
+        font-size: 44px;    
+    }
+}
+
+@include for-huge-desktop {
+    .project::before,
+    .project::after,
+    .project .project__caption {
+        @include inset(1rem);
+    } 
+
+    .project:first-of-type::before,
+    .project:first-of-type::after,
+    .project:first-of-type .project__caption {
+        @include inset(2rem);
+    }   
+    .projects {
+        width: calc(100vw - 512px);
+    }
+  
 }

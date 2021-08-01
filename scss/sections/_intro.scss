@@ -5,18 +5,19 @@
     text-align: center;
     row-gap: 8px;    
     height:100vh;
+    padding-top: 32px;
     
     
 }
-.intro__profile-picture {
-    margin-top: 32px;
+.intro__profile-picture {    
     width: 145px;
     height: 145px;
     border-radius: 50%;
-    background: white;
-    background-image: url(assets/img/profile-icon.png);
-    background-size: cover;
-    background-position: 5px;
+    background: white;    
+    object-fit: cover;
+    object-position: 6px;
+    overflow: visible;
+    
 }
 
 .intro__greet,
@@ -82,4 +83,27 @@
     border-radius: 50%;
     border: 2px solid white;
     margin-bottom: 32px;
- }
+}
+
+@include for-tablet-portrait { 
+    .intro {
+        height:max-content;
+    }    
+    .intro_scroll-button {
+        display: none;
+    }
+    .intro__profile-picture {
+        margin-top: 32px;
+    }
+}
+
+@include for-desktop {
+    .intro {
+        row-gap: 1rem;
+    }
+    .intro__profile-picture{
+        width: 282px;
+        height: 282px;
+    }
+}
+

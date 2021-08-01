@@ -1,8 +1,6 @@
 .cta {
     display:grid;
-    grid-auto-flow: row;
-    margin-left: 16px;
-    margin-right: 16px;
+    grid-auto-flow: row;    
     padding: 16px 8px;
     --clr-bg: var(--clr-primary-300);
     background: var(--clr-bg);
@@ -19,22 +17,24 @@
 .cta__motto {
     font-family: var(--font-ff-oxanium);
     font-weight: var(--font-fw-regular);
-    font-size: 48px;    
+    font-size: var(--font-fs-h1);
     color: var(--clr-white);
 }
 
 .cta__quote {
     font-family: var(--font-ff-poppins);
     font-weight: var(--font-fw-regular);
-    font-size: 1rem;
+    font-size: var(--font-fs-body-normal);
+    @include padding-inline(1rem);
 }
 
 .cta__quote::before,
 .cta__quote::after {
     font-family: var(--font-ff-oxanium);
     font-weight: var(--font-fw-regular);
-    font-size: 2rem;
+    font-size: calc(var(--font-fs-body-normal)*2);
     color: var(--clr-accent-500);
+    opacity: 0.4;
 }
 .cta__quote::before {
     content: open-quote;
@@ -45,6 +45,22 @@
 .cta__personality-adjectives{
     font-family: var(--font-ff-poppins);
     font-weight: var(--font-fw-regular);
-    font-size: 24px;
+    font-size: var(--font-fs-body-normal);
 }
 
+@include for-tablet-portrait {  
+    .cta {
+        height: max-content;
+    }
+}
+
+@include for-desktop {
+    .cta {
+        row-gap: 4rem;
+    }
+}
+@include for-huge-desktop {
+    .cta__quote {
+        @include padding-inline(6rem);
+    }
+}

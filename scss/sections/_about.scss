@@ -1,11 +1,9 @@
 .about {
-    margin-left: 16px;
-    margin-right: 16px;
 }
 .about__header {
     font-family: var(--font-ff-sourcecode);
     font-weight: var(--font-fw-black);
-    font-size: 1rem;
+    font-size: var(--font-fs-body-normal);
     background: var(--clr-primary-300);
     margin-bottom: 0;
     padding: 1rem;
@@ -19,4 +17,5 @@
     background: var(--clr-primary-350);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: var(--font-fs-body-normal);
 }
