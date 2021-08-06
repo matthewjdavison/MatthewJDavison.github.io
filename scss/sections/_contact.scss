@@ -63,6 +63,10 @@
     width: max-content;
 }
 
+.contact__input:invalid.touched {
+    border-color: red;
+}
+
 @include for-tablet-portrait {  
     .contact__form {
         grid-template-columns: 1fr 1fr;

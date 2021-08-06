@@ -1,5 +1,4 @@
 const portfolioItems = document.querySelector(".projects");
-const resumesLink = document.querySelector("#resumesLink");
 let anyModalOpen = false;
 function openModal(e, linkClass){
 if (!anyModalOpen) {
@@ -22,7 +21,6 @@ if (!anyModalOpen) {
 }
 
 portfolioItems.addEventListener("click", (e) => openModal(e, '.project__link'));
-resumesLink.addEventListener("click", (e) => openModal(e, '.modal__link'));
 // ====================================================== //
 // ================ Portfolio Interactive =============== //
 // ====================================================== //
@@ -52,4 +50,3 @@ for (let i = 0; i < projects.length; i++){
         }
     };
 }
-resumesLink.addEventListener("click", e => console.log(e));

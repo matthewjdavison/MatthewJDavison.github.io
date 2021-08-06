@@ -1243,6 +1243,10 @@ section {
   width: max-content;
 }
 
+.contact__input:invalid.touched {
+  border-color: red;
+}
+
 @media screen and (min-width: 600px) {
   .contact__form {
     grid-template-columns: 1fr 1fr;

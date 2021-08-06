@@ -50,7 +50,7 @@ layout: "base.njk"
       </a>
   </div>
   {% endfor %}
-  <a href="https://www.dropbox.com/sh/di10shxeaj4cif3/AADW6VV-QN3Dxd1ohzFGfQZ_a?dl=0" target="_blank" class="button primary-btn">View more</a>
+  <a href="https://www.dropbox.com/sh/di10shxeaj4cif3/AADW6VV-QN3Dxd1ohzFGfQZ_a?dl=0" target="_blank" class="button primary-btn">View all my resumes on Dropbox</a>
 </section>
 
 <section class="projects" id="projects">
@@ -124,20 +124,20 @@ layout: "base.njk"
 <section class="contact">
   <h1 class="contact__header">Contact Me</h1>
   <form name="contact" method="POST" netlify class="contact__form">
-    <label for="Name" class="contact__label">Name:
-      <input aria-label="Name Input Field" type="text" placeholder="Placeholder" name="name" class="contact__input"/>
+    <label for="Name"  class="contact__label contact__name">Name:
+      <input aria-label="Name Input Field" type="text" required type="text" placeholder="Placeholder" name="name" pattern="^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" class="contact__input"/>
       <p class="contact__field--error">Important Info / Error Message</p>
     </label>
-    <label for="Email" class="contact__label">Email:
-      <input aria-label="Email Input Field" type="text" placeholder="Placeholder"  name="email" class="contact__input"/>
+    <label for="Email" class="contact__label contact__email">Email:
+      <input aria-label="Email Input Field" type="email" required type="text" placeholder="Placeholder"  name="email" class="contact__input"/>
       <p class="contact__field--error">Important Info / Error Message</p>
     </label>
-    <label for="Subject" class="contact__label">Subject:
-      <input aria-label="Subject Input Field" type="text" placeholder="Placeholder" name="subject" class="contact__input"/>
+    <label for="Subject" class="contact__label contact__subject">Subject:
+      <input aria-label="Subject Input Field" type="text" required  placeholder="Placeholder" name="subject" class="contact__input"/>
       <p class="contact__field--error">Important Info / Error Message</p>
     </label>
-    <label for="Message" class="contact__label">Message:
-      <textarea aria-label="Message Input Field" type="text" placeholder="Placeholder" name="message" class="contact__textarea"></textarea>
+    <label for="Message"  class="contact__label contact__message">Message:
+      <textarea aria-label="Message Input Field" type="text" required placeholder="Placeholder" name="message" class="contact__textarea"></textarea>
       <p class="contact__field--error">Important Info / Error Message</p>
     </label>
 
