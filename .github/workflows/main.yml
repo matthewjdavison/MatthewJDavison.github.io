@@ -31,6 +31,9 @@ jobs:
       - name: run eleventy
         run: npm run build
         
+      - name: git pull
+        run: git pull
+        
       - name: update site
         run: git subtree push --prefix public origin gh-pages
  
