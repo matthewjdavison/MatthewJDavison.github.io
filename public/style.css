@@ -588,7 +588,6 @@ section {
   right: 8px;
   bottom: 8px;
   padding: 8px;
-  grid-auto-flow: row;
   z-index: 1;
 }
 
@@ -641,7 +640,6 @@ section {
   font-weight: var(--font-fw-bold);
   color: var(--clr-accent-500);
   text-decoration: underline;
-  align-self: end;
 }
 
 .project:first-of-type .project__caption {
@@ -709,6 +707,8 @@ section {
   position: static;
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 255, 196, 0.3);
+  max-height: 55%;
+  object-fit: cover;
 }
 
 .modal__header {
@@ -854,6 +854,24 @@ section {
     font-size: 44px;
   }
 
+  @supports not (inset: 0) {
+    .project__modal {
+      top: 1rem;
+      left: 200px;
+      right: 200px;
+      bottom: 1rem;
+    }
+  }
+  @supports (inset: 0) {
+    .project__modal {
+      inset: 1rem 200px 1rem 200px;
+    }
+  }
+
+  .close-modal {
+    left: 185px;
+  }
+
   .modal__header {
     padding: 1.5rem 20rem;
     top: 30rem;
@@ -900,6 +918,20 @@ section {
     width: calc(100vw - 512px);
   }
 
+  @supports not (inset: 0) {
+    .project__modal {
+      top: 1rem;
+      left: 16rem;
+      right: 16rem;
+      bottom: 1rem;
+    }
+  }
+  @supports (inset: 0) {
+    .project__modal {
+      inset: 1rem 16rem 1rem 16rem;
+    }
+  }
+
   .modal__image {
     object-fit: cover;
     height: 300px;
@@ -908,6 +940,10 @@ section {
 
   .modal__header {
     top: 2rem;
+  }
+
+  .close-modal {
+    left: 240px;
   }
 }
 .resumes {
