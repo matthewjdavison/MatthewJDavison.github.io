@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>{{title}}</title>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://kit.fontawesome.com/7d6e5093d6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    
+</head>
+<body>    
+{% include "header.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+{% include "footer.njk" %}
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+
+</script>
+</body>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/modal.js"></script>
+{# <script src="./assets/js/css-fixes.js"></script> #}
+
+</html>

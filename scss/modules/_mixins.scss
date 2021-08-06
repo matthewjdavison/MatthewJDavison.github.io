@@ -1,0 +1,89 @@
+@mixin for-tiny-devices {
+    @media (max-width: 319px){
+        @content;
+    }
+}
+@mixin for-tablet-portrait { //Small
+    @media screen and (min-width: 600px){
+        @content;
+    }
+}
+@mixin for-tablet-landscape { //medium
+    @media screen and (min-width: 1000px){
+        @content;
+    }
+}
+@mixin for-desktop { //large
+    @media screen and (min-width: 1200px){
+        @content;
+    }
+}
+@mixin for-big-desktop { //larger
+    @media screen and (min-width: 1500px){
+        @content;
+    }
+}
+@mixin for-huge-desktop { //largest
+    @media screen and (min-width: 1900px){
+        @content;
+    }
+}
+
+@mixin container($width: 90%, $max-width: 50em){
+    width: $width;
+    margin: 0 auto;
+    max-width: $max-width;
+}
+
+@mixin margin-inline($left, $right:$left){
+    @supports not(margin-inline: 0){
+        margin-left: $left;
+        margin-right: $right;
+    }
+    @supports (margin-inline: 0){
+        margin-inline: $left $right;
+    }
+}
+
+@mixin margin-block($top, $bottom:$top){
+    @supports not(margin-block: 0){
+        margin-top: $top;
+        margin-bottom: $bottom;
+    }
+    @supports (margin-block: 0){
+        margin-block: $top $bottom;
+    }
+}
+
+@mixin padding-inline($left, $right:$left){
+    @supports not(padding-inline: 0){
+        padding-left: $left;
+        padding-right: $right;
+    }
+    @supports (padding-inline: 0){
+        padding-inline: $left $right;
+    }
+}
+
+@mixin padding-block($top, $bottom:$top){
+    @supports not(padding-block: 0){
+        padding-top: $top;
+        padding-bottom: $bottom;
+    }
+    @supports (padding-block: 0){
+        padding-block: $top $bottom;
+    }
+}
+
+@mixin inset($left, $right:$left, $top:$left, $bottom:$top){
+    @supports not(inset: 0){
+        top: $top;
+        left: $left;
+        right: $right;
+        bottom: $bottom;
+    }
+    @supports (inset:0){
+        inset:$top $right $bottom $left;
+    }
+}
+

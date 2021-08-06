@@ -1,0 +1,21 @@
+.about {
+}
+.about__header {
+    font-family: var(--font-ff-sourcecode);
+    font-weight: var(--font-fw-black);
+    font-size: var(--font-fs-body-normal);
+    background: var(--clr-primary-300);
+    margin-bottom: 0;
+    padding: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.about__body {
+    padding: 2rem;
+    background: var(--clr-primary-350);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: var(--font-fs-body-normal);
+}

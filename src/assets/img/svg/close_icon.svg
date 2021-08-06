@@ -1,0 +1,4 @@
+<svg width="25px" height="25px">
+    <rect transform="rotate(45)" x="1" y="-1" width="33" height="3" style="stroke-width:0" />
+    <rect transform="rotate(-45)" x="-16" y="16" width="33" height="3" style="stroke-width:0" />
+</svg>

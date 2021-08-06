@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Thank you!</title>
+
+    <style>
+   
+    .main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        max-width: 364px;
+        padding: 24px;
+        background: var(--clr-primary-300);        
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 24px;
+        font-family: var(--font-ff-oxanium);
+        font-weight: var(--font-fw-regular);
+    }
+
+    a {
+        margin: 0;
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--clr-accent-500);
+    }
+
+    p:last-of-type {
+	    margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <section class="card">
+            <header class="card__header"><h1>Thank you!</h1></header>
+            <div class="card__body">
+                <p>Your form submission has been received.</p>
+                <p><a href="https://musing-mahavira-265422.netlify.app/">← Back to my site</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

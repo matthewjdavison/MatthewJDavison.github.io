@@ -1,0 +1,146 @@
+---
+title: "Matthew Davison"
+layout: "base.njk"
+---
+
+<section class="intro" id="intro">
+  <img src="assets/img/profile-icon.png" alt="" class="intro__profile-picture" />
+  <h3 class="intro__greet">Hi! My name is</h3>
+  <h1 class="intro__name">Matthew Davison</h1>
+  <h2 class="intro__role">
+    I’m a Developer. I develop websites, android apps and classical games!
+  </h2>
+  <a href="#cta" class="intro_scroll-button">   
+    <svg class="intro__scroll-svg" height="calc(16px*32)" viewBox="0 0 8 16">
+  <ellipse fill="none" stroke="#000000"
+     stroke-width="0.1"
+     cx="4" cy="8"
+     rx="3.95" ry="7.95" />
+  <path d="m 3.85,2.7499997 0.3,0 v 9 h -0.3 z"/>
+  <path d="m 3,11.75 h 2 l -1,1.5 z" />
+</svg>
+
+  </a>
+</section>
+
+<section class="cta" id="cta">
+  <h1 class="cta__motto">Struggle, Persevere, Conquer.</h1>
+  <p class="cta__quote">
+    Regardless of the task or the challenges that come with it, if you struggle
+    and persevere, you’ll eventually conquer any goal.
+  </p>
+  <p class="cta__personality-adjectives">This is who I am.</p>
+  <a href="#projects"class="button primary-btn">See my work</a>
+</section>
+
+<section class="resumes" id="resumes">
+  <h1 class="resumes_header">Featured Resumes</h1>
+    {% for resume in collections.resume %}
+  <div class="{% for class in resume.data.classes %}{{ class }} {% endfor %}" tabindex="0">
+    <a class="resume__link" href="{{ resume.data.url }}" tabindex="-1">
+    <img
+      src="{{ resume.data.imageFeatured }}"
+      alt="{{ resume.data.imageFeaturedAlt }}"
+      class="resume__image" />
+      <div class="resume__overlay"></div>
+      
+        <div class="resume__caption">
+          <h3 class="resume__role">{{ resume.data.role }}</h3>
+        </div> 
+      </a>
+  </div>
+  {% endfor %}
+  <a href="https://www.dropbox.com/sh/di10shxeaj4cif3/AADW6VV-QN3Dxd1ohzFGfQZ_a?dl=0" target="_blank" class="button primary-btn">View all my resumes on Dropbox</a>
+</section>
+
+<section class="projects" id="projects">
+  <h1 class="projects_header">Featured Projects</h1>
+  {% for project in collections.project %}
+  <div class="{% for class in project.data.classes %}{{ class }} {% endfor %}"  tabindex="0">    
+    <img
+      src="{{ project.data.imageFeatured }}"
+      alt="{{ project.data.imageFeaturedAlt }}"
+      class="project__image" />
+    <div class="project__overlay"></div>
+    <div class="project__caption">
+      <h3 class="project__title">{{ project.data.title }}</h3>
+      <p class="project__summary">{{ project.data.summary }}</p>
+      <a href="#" class="project__link" tabindex="-1">Read More</a>
+    </div> 
+    <div class="project__modal">
+      <svg class="close-modal" viewBox="0 0 16 16">
+        <ellipse cx="8" cy="8" rx="7.5" ry="7.5" />
+        <g>
+          <path d="M 3.76,3.76 12.24,12.24" />
+          <path d="M 3.76,12.24 12.24,3.76" />
+        </g>       
+      </svg>
+      <img class="modal__image" 
+      src="{{ project.data.imageFeatured }}"
+      alt="{{ project.data.imageFeaturedAlt }}"/>
+    <header class="modal__header">
+      <h1 class="modal__title">{{ project.data.title }}</h1>
+      <h2 class="modal__slogan">{{ project.data.slogan }}</h2>      
+    </header>
+    <p class="modal__summary">{{ project.data.summary }}</p>      
+    <section class="modal__content"> {{ project.templateContent | safe }}</section>
+    </div>
+  </div>  
+  {% endfor %}
+  <a href="https://github.com/matthewjdavison?tab=projects" target="_blank" class="button primary-btn">View all my projects on GitHub</a>
+</section>
+
+<section class="about">
+  <h1>About Me</h1>
+    <h2 class="about__header">About - Visual Studio Code</h2>
+    <p class="about__body"><samp>
+      > $matthew.Name <br>
+      Matthew Davison <br><br>
+
+      > $matthew.Age <br>
+      22 <br><br>
+
+      > $matthew.Origin <br>
+      Plymouth, Devon, UK <br><br>
+
+      > $matthew.Interests <br>
+      Listening to Music <br>
+      Watching Live Streamers <br>
+      Reading books and light novels <br>
+      Programming various projects <br>
+      Trying my hand at web design <br>
+      Sound design... just how do sounds make you feel emotions?! <br><br>
+
+      > $matthew.Bio <br>
+      Hello! I’m Matthew. I’m a designer and a programmer. I first discovered the marvels of the computing world
+      back in Primary School and since then, I’ve played around with creating various apps, websites, games and
+      software. <br><br>
+
+      > $matthew.Hire <br>
+      Fancy hiring me? Check out my resumes and CV! Note, both links lead to dropbox in a new tab!<br><br>
+    </samp></p>
+</section>
+
+<section class="contact">
+  <h1 class="contact__header">Contact Me</h1>
+  <form name="contact" method="POST" netlify class="contact__form">
+    <label for="Name"  class="contact__label contact__name">Name:
+      <input aria-label="Name Input Field" type="text" required type="text" placeholder="Placeholder" name="name" pattern="^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" class="contact__input"/>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+    <label for="Email" class="contact__label contact__email">Email:
+      <input aria-label="Email Input Field" type="email" required type="text" placeholder="Placeholder"  name="email" class="contact__input"/>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+    <label for="Subject" class="contact__label contact__subject">Subject:
+      <input aria-label="Subject Input Field" type="text" required  placeholder="Placeholder" name="subject" class="contact__input"/>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+    <label for="Message"  class="contact__label contact__message">Message:
+      <textarea aria-label="Message Input Field" type="text" required placeholder="Placeholder" name="message" class="contact__textarea"></textarea>
+      <p class="contact__field--error">Important Info / Error Message</p>
+    </label>
+
+    <button type="submit" class="button outline-btn contact__submit">Submit Form</button>
+  </form>
+</section>

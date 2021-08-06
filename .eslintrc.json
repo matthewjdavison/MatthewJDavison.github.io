@@ -1,0 +1,13 @@
+{
+    "plugins": [
+      "jsx-a11y",
+      "html"
+    ],
+    "extends": [
+      "plugin:jsx-a11y/recommended"
+  ],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    }    
+
+  }
