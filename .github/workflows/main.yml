@@ -29,4 +29,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: run eleventy
-        run: npm build
+        run: npm run build
+        
+      - name: update site
+        run: git subtree push --prefix public origin gh-pages
