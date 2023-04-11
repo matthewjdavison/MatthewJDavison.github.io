@@ -7,7 +7,7 @@
     "nunjucks": "^3.2.3"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^2.0.1",
     "eslint": "^7.31.0",
     "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-jsx-a11y": "^6.4.1"
